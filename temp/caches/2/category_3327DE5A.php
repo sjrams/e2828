@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:6:{i:0;s:48:"D:/xampp/htdocs/e2828/themes/xiaomi/category.dwt";i:1;s:59:"D:/xampp/htdocs/e2828/themes/xiaomi/library/page_header.lbi";i:2;s:55:"D:/xampp/htdocs/e2828/themes/xiaomi/library/ur_here.lbi";i:3;s:58:"D:/xampp/htdocs/e2828/themes/xiaomi/library/goods_list.lbi";i:4;s:58:"D:/xampp/htdocs/e2828/themes/xiaomi/library/shop_alert.lbi";i:5;s:59:"D:/xampp/htdocs/e2828/themes/xiaomi/library/page_footer.lbi";}s:7:"expires";i:1472010917;s:8:"maketime";i:1472007317;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:6:{i:0;s:48:"D:/xampp/htdocs/e2828/themes/xiaomi/category.dwt";i:1;s:59:"D:/xampp/htdocs/e2828/themes/xiaomi/library/page_header.lbi";i:2;s:55:"D:/xampp/htdocs/e2828/themes/xiaomi/library/ur_here.lbi";i:3;s:58:"D:/xampp/htdocs/e2828/themes/xiaomi/library/goods_list.lbi";i:4;s:58:"D:/xampp/htdocs/e2828/themes/xiaomi/library/shop_alert.lbi";i:5;s:59:"D:/xampp/htdocs/e2828/themes/xiaomi/library/page_footer.lbi";}s:7:"expires";i:1472027851;s:8:"maketime";i:1472024251;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="ECSHOP v2.7.3" />
@@ -12,6 +12,8 @@
 <link rel="stylesheet" type="text/css" href="themes/xiaomi/css/goods-category.min.css?ver=2013120301" />
 <script type="text/javascript" src="js/common.js"></script><script type="text/javascript" src="js/user.js"></script><script type="text/javascript" src="js/utils.js"></script></head>
 <body>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>E家数码</title>
 <link rel="stylesheet" href="themes/xiaomi/css/base.min.css?2014050501" />
 <script src="themes/xiaomi/js/jquery.js"></script>
 <script type="text/javascript">
@@ -24,439 +26,145 @@ document.getElementsByTagName("body")[0].className="w950";
 document.write("<link rel='stylesheet' type='text/css' href='themes/xiaomi/css/980base.css'>");
 }
 </script>
-<div class="site-topbar">
-  <div class="container">
-    <div class="topbar-nav">
-            <a href="mobile" 
-            >移动版</a>
-            <span class="sep">|</span>
-                  <a href="index.php" 
-            >欢迎光临汕头E家数码-最新手机报价网</a>
+<script src="http://apps.bdimg.com/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/lx.js"></script>
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<link rel="stylesheet" type="text/css" href="css/header.css" />
+<header class="main-header">
+    	<div class="navtop">
+        	<div class="auto">
+            	<span><a href="index.php">欢迎光临汕头E家数码-最新手机报价网</a></span>
+                <div class="post">
+                    <ul>
+                        <li><a href="user.php">554fcae493e564ee0dc75bdf2ebf94camember_info|a:1:{s:4:"name";s:11:"member_info";}554fcae493e564ee0dc75bdf2ebf94ca</a></li>
+                     
+                    </ul>
                 </div>
-    <div class="topbar-info J_userInfo"> 554fcae493e564ee0dc75bdf2ebf94camember_info|a:1:{s:4:"name";s:11:"member_info";}554fcae493e564ee0dc75bdf2ebf94ca </div>
-  </div>
-</div>
-<div class="site-header container" id="site_header">
-  <div class="site-logo"> <a class="logo" href="index.php"><img src="themes/xiaomi/images/logo.gif" /> </a><span>|</span>
-    <li>
-       <p>智能手机</p>
-       <p>品质如一</p>
-    </li>
-   </div>
-  <div class="header-info">
-    <div class="search-section">
-      <script type="text/javascript">
-    
-    <!--
-    function checkSearchForm()
-    {
-        if(document.getElementById('keyword').value)
-        {
-            return true;
-        }
-        else
-        {
-            alert("请输入搜索关键词！");
-            return false;
-        }
-    }
-    -->
-    
-    </script>
-	<script language="javascript">
-	function drop_cart_goods(id)
-	{
-		$.ajax({
-						type:"POST",
-						url:"flow.php?step=drop_cart_goods&id=" + id,
-						cache:false,
-						dataType:'json',     //接受数据格式
-						data:'',
-						success:function(result){
-							$('#J_miniCartList').html(result.message);
-							$('.J_cartNum').html('(' + result.goods_num + ')');
+            </div>
+        </div>
+        <div class="logo auto">
+        	<div class="fixed">
+            	<div class="left">
+                	<a href="#" class="img"><img src="themes/xiaomi/images/logo.jpg" /></a>
+                    <span>|</span>
+                </div>
+                <div class="left">
+                    <p>智能手机</p>
+                    <p>品质如一</p>
+                </div>
+                <div class="form">
+			
+	<script type="text/javascript">
+		
+			<!--
+				function checkSearchForm()
+				{
+					if(document.getElementById('search').value)
+						{
+							return true;
 						}
-					});
-	}
-	
+					else
+						{
+							alert("请输入搜索关键词！");
+							return false;
+						}
+				}
+			-->
+		
 	</script>
-      <form id="J_searchForm" class="search-form clearfix" action="search.php" method="get" onSubmit="return checkSearchForm()" >
-        <input class="search-text" type="search" name="keywords" id="keyword" autocomplete="off" value="" placeholder="搜索您需要的商品" />
-        <input type="submit" class="search-btn iconfont" value="&#xe630;" />
-        <!--[if IE 6]><div class="ie6-fix"></div><![endif]-->
-        <div class="hot-words">  <a href="search.php?keywords=oppo">oppo</a>  <a href="search.php?keywords=vivo">vivo</a>  <a href="search.php?keywords=iphone">iphone</a>  </div>
-      </form>
-    </div>
-    <div class="cart-section"> <a id="J_miniCart" class="mini-cart" href="flow.php"><i class="iconfont">&#xe609;</i>购物车<span class="mini-cart-num J_cartNum">(554fcae493e564ee0dc75bdf2ebf94cacart_count|a:1:{s:4:"name";s:10:"cart_count";}554fcae493e564ee0dc75bdf2ebf94ca)</span></a>
-      <div id="J_miniCartList" class="mini-cart-list">
-        		554fcae493e564ee0dc75bdf2ebf94cacart_data|a:1:{s:4:"name";s:9:"cart_data";}554fcae493e564ee0dc75bdf2ebf94ca      </div>
-    </div>
-  </div>
-  <div class="header-nav clearfix">
-    <div id="J_categoryContainer" class="nav-category"> <a class="btn-category-list" href="catalog.php">商品总汇</a>
-      <div class="nav-category-section" style="display: none;">
-        <ul class="nav-category-list">
-          		  <li class="nav-category-item ">
-            <div class="nav-category-content"><a id="uu"  class="title_43" href="category.php?id=43">手机分类</a>
-           
-		    <!--  <div class="links">
-			  			<!--  			  <a href="category.php?id=30">苹果</a>
-			  			  			<!--  			  <a href="category.php?id=31">三星</a>
-			  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  </div>
-			  -->
-			                <div class="nav-category-children">
-                <ul class="children-list">
-				                                                  <li><a href="category.php?id=30"><img src="themes/xiaomi/images/index/cat_30.jpg" alt=""><span class="text">苹果</span></a></li>
-								                                                    <li><a href="category.php?id=31"><img src="themes/xiaomi/images/index/cat_31.jpg" alt=""><span class="text">三星</span></a></li>
-								                                                    <li><a href="category.php?id=32"><img src="themes/xiaomi/images/index/cat_32.jpg" alt=""><span class="text">oppo</span></a></li>
-								                                                    <li><a href="category.php?id=33"><img src="themes/xiaomi/images/index/cat_33.jpg" alt=""><span class="text">vivo</span></a></li>
-								                                                    <li><a href="category.php?id=34"><img src="themes/xiaomi/images/index/cat_34.jpg" alt=""><span class="text">小米</span></a></li>
-								                                                    <li><a href="category.php?id=35"><img src="themes/xiaomi/images/index/cat_35.jpg" alt=""><span class="text">华为</span></a></li>
-								                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                  </ul>
-                  
-                 
-				
-				<ul class="children-list">
-												  								  								  								  								  								  				                  <li><a href="category.php?id=36"><img src="themes/xiaomi/images/index/cat_36.jpg" alt=""><span class="text">魅族</span></a></li>   
-				    				  				                  <li><a href="category.php?id=37"><img src="themes/xiaomi/images/index/cat_37.jpg" alt=""><span class="text">乐视</span></a></li>   
-				    				  				                  <li><a href="category.php?id=38"><img src="themes/xiaomi/images/index/cat_38.jpg" alt=""><span class="text">华硕</span></a></li>   
-				    				  				                  <li><a href="category.php?id=39"><img src="themes/xiaomi/images/index/cat_39.jpg" alt=""><span class="text">360奇酷</span></a></li>   
-				    				  				                  <li><a href="category.php?id=40"><img src="themes/xiaomi/images/index/cat_40.jpg" alt=""><span class="text">海信</span></a></li>   
-				    				  				                  <li><a href="category.php?id=41"><img src="themes/xiaomi/images/index/cat_41.jpg" alt=""><span class="text">金立</span></a></li>   
-				    				  								  								  								  								  								  								  								  								  								  								  								  								  								                  </ul>
+	<script language="javascript">
+		function drop_cart_goods(id)
+			{
+				$.ajax({
+					type:"POST",
+					url:"flow.php?step=drop_cart_goods&id=" + id,
+					cache:false,
+					dataType:'json',     //接受数据格式
+					data:'',
+					success:function(result){
+						$('#J_miniCartList').html(result.message);
+						$('.J_cartNum').html('(' + result.goods_num + ')');
+					}
+					});
+			}
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			$(".pp").mouseover(function(){
+				$(this).addClass("c").siblings("li");
+				}).mouseout(function(){
+				$(this).removeClass("c").siblings("li");
+			});
+		});  	
+	</script>
+			<form id="J_searchForm"  action="search.php" method="get" onSubmit="return checkSearchForm()" >
+				<input  type="search" name="keywords" id="search" autocomplete="off" value="" placeholder="搜索您需要的商品" />
+				<input type="submit" id="submit" value="&#xe60c;" />		
+			</form>
 					
-            
-				
-				<ul class="children-list">
-												  								  								  								  								  								  								  								  								  								  								  								  				                  <li><a href="category.php?id=44"><img src="themes/xiaomi/images/index/cat_44.jpg" alt=""><span class="text">诺基亚</span></a></li>   
-				    				  				                  <li><a href="category.php?id=45"><img src="themes/xiaomi/images/index/cat_45.jpg" alt=""><span class="text">HTC</span></a></li>   
-				    				  				                  <li><a href="category.php?id=46"><img src="themes/xiaomi/images/index/cat_46.jpg" alt=""><span class="text">联想</span></a></li>   
-				    				  				                  <li><a href="category.php?id=47"><img src="themes/xiaomi/images/index/cat_47.jpg" alt=""><span class="text">天语</span></a></li>   
-				    				  				                  <li><a href="category.php?id=49"><img src="themes/xiaomi/images/index/cat_49.jpg" alt=""><span class="text">LG</span></a></li>   
-				    				  				                  <li><a href="category.php?id=50"><img src="themes/xiaomi/images/index/cat_50.jpg" alt=""><span class="text">TCL</span></a></li>   
-				    				  								  								  								  								  								  								  								                  </ul>
-					
-                       
-				
-				<ul class="children-list">
-												  								  								  								  								  								  								  								  								  								  								  								  								  								  								  								  								  								  				                  <li><a href="category.php?id=52"><img src="themes/xiaomi/images/index/cat_52.jpg" alt=""><span class="text">中兴</span></a></li>   
-				    				  				                  <li><a href="category.php?id=53"><img src="themes/xiaomi/images/index/cat_53.jpg" alt=""><span class="text">语信</span></a></li>   
-				    				  				                  <li><a href="category.php?id=54"><img src="themes/xiaomi/images/index/cat_54.jpg" alt=""><span class="text">美图</span></a></li>   
-				    				  				                  <li><a href="category.php?id=55"><img src="themes/xiaomi/images/index/cat_55.jpg" alt=""><span class="text">锤子</span></a></li>   
-				    				  				                  <li><a href="category.php?id=56"><img src="themes/xiaomi/images/index/cat_56.jpg" alt=""><span class="text">微软</span></a></li>   
-				    				  				                  <li><a href="category.php?id=57"><img src="themes/xiaomi/images/index/cat_57.jpg" alt=""><span class="text">一加</span></a></li>   
-				    				  								                                   </ul>
-					
-				
-				<ul class="children-list">
-												  								  								  								  								  								  								  								  								  								  								  								  								  								  								  								  								  								  								  								  								  								  								  								  				                  <li><a href="category.php?id=58"><img src="themes/xiaomi/images/index/cat_58.jpg" alt=""><span class="text">酷派</span></a></li>   
-				    				                                   </ul>
-					
-                
-              </div>
-			              </div>
-          </li>
-		  		  <li class="nav-category-item ">
-            <div class="nav-category-content"><a id="uu"  class="title_60" href="category.php?id=60">平板专区</a>
-           
-		    <!--  <div class="links">
-			  			<!--  			  <a href="category.php?id=62">苹果</a>
-			  			  			<!--  </div>
-			  -->
-			                <div class="nav-category-children">
-                <ul class="children-list">
-				                                                  <li><a href="category.php?id=62"><img src="themes/xiaomi/images/index/cat_62.jpg" alt=""><span class="text">苹果</span></a></li>
-								                  </ul>
-                  
-                 
-				
-				<ul class="children-list">
-												                  </ul>
-					
-            
-				
-				<ul class="children-list">
-												                  </ul>
-					
-                       
-				
-				<ul class="children-list">
-												                                   </ul>
-					
-				
-				<ul class="children-list">
-												                                   </ul>
-					
-                
-              </div>
-			              </div>
-          </li>
-		  		  <li class="nav-category-item ">
-            <div class="nav-category-content"><a id="uu"  class="title_59" href="category.php?id=59">智能腕表</a>
-           
-		    <!--  <div class="links">
-			  			<!--  			  <a href="category.php?id=70">小天才</a>
-			  			  			<!--  			  <a href="category.php?id=71">三星</a>
-			  			  			<!--  			  			<!--  			  			<!--  			  			<!--  			  			<!--  </div>
-			  -->
-			                <div class="nav-category-children">
-                <ul class="children-list">
-				                                                  <li><a href="category.php?id=70"><img src="themes/xiaomi/images/index/cat_70.jpg" alt=""><span class="text">小天才</span></a></li>
-								                                                    <li><a href="category.php?id=71"><img src="themes/xiaomi/images/index/cat_71.jpg" alt=""><span class="text">三星</span></a></li>
-								                                                    <li><a href="category.php?id=72"><img src="themes/xiaomi/images/index/cat_72.jpg" alt=""><span class="text">其他</span></a></li>
-								                                                    <li><a href="category.php?id=73"><img src="themes/xiaomi/images/index/cat_73.jpg" alt=""><span class="text">苹果</span></a></li>
-								                                                    <li><a href="category.php?id=74"><img src="themes/xiaomi/images/index/cat_74.jpg" alt=""><span class="text">华为</span></a></li>
-								                                                    <li><a href="category.php?id=75"><img src="themes/xiaomi/images/index/cat_75.jpg" alt=""><span class="text">360</span></a></li>
-								                  </ul>
-                  
-                 
-				
-				<ul class="children-list">
-												  								  								  								  								  								                  </ul>
-					
-            
-				
-				<ul class="children-list">
-												  								  								  								  								  								                  </ul>
-					
-                       
-				
-				<ul class="children-list">
-												  								  								  								  								  								                                   </ul>
-					
-				
-				<ul class="children-list">
-												  								  								  								  								  								                                   </ul>
-					
-                
-              </div>
-			              </div>
-          </li>
-		  		  <li class="nav-category-item ">
-            <div class="nav-category-content"><a id="uu"  class="title_63" href="category.php?id=63">手机储存卡</a>
-           
-		    <!--  <div class="links">
-			  			<!--  			  <a href="category.php?id=80">万能读卡</a>
-			  			  			<!--  			  <a href="category.php?id=81">闪迪</a>
-			  			  			<!--  			  			<!--  			  			<!--  </div>
-			  -->
-			                <div class="nav-category-children">
-                <ul class="children-list">
-				                                                  <li><a href="category.php?id=80"><img src="themes/xiaomi/images/index/cat_80.jpg" alt=""><span class="text">万能读卡</span></a></li>
-								                                                    <li><a href="category.php?id=81"><img src="themes/xiaomi/images/index/cat_81.jpg" alt=""><span class="text">闪迪</span></a></li>
-								                                                    <li><a href="category.php?id=82"><img src="themes/xiaomi/images/index/cat_82.jpg" alt=""><span class="text">金士顿</span></a></li>
-								                                                    <li><a href="category.php?id=83"><img src="themes/xiaomi/images/index/cat_83.jpg" alt=""><span class="text">东芝</span></a></li>
-								                  </ul>
-                  
-                 
-				
-				<ul class="children-list">
-												  								  								  								                  </ul>
-					
-            
-				
-				<ul class="children-list">
-												  								  								  								                  </ul>
-					
-                       
-				
-				<ul class="children-list">
-												  								  								  								                                   </ul>
-					
-				
-				<ul class="children-list">
-												  								  								  								                                   </ul>
-					
-                
-              </div>
-			              </div>
-          </li>
-		  		  <li class="nav-category-item ">
-            <div class="nav-category-content"><a id="uu"  class="title_64" href="category.php?id=64">移动电源</a>
-           
-		    <!--  <div class="links">
-			  			<!--  			  <a href="category.php?id=76">羽博</a>
-			  			  			<!--  			  <a href="category.php?id=77">米格</a>
-			  			  			<!--  			  			<!--  			  			<!--  </div>
-			  -->
-			                <div class="nav-category-children">
-                <ul class="children-list">
-				                                                  <li><a href="category.php?id=76"><img src="themes/xiaomi/images/index/cat_76.jpg" alt=""><span class="text">羽博</span></a></li>
-								                                                    <li><a href="category.php?id=77"><img src="themes/xiaomi/images/index/cat_77.jpg" alt=""><span class="text">米格</span></a></li>
-								                                                    <li><a href="category.php?id=78"><img src="themes/xiaomi/images/index/cat_78.jpg" alt=""><span class="text">乐友</span></a></li>
-								                                                    <li><a href="category.php?id=79"><img src="themes/xiaomi/images/index/cat_79.jpg" alt=""><span class="text">酷派</span></a></li>
-								                  </ul>
-                  
-                 
-				
-				<ul class="children-list">
-												  								  								  								                  </ul>
-					
-            
-				
-				<ul class="children-list">
-												  								  								  								                  </ul>
-					
-                       
-				
-				<ul class="children-list">
-												  								  								  								                                   </ul>
-					
-				
-				<ul class="children-list">
-												  								  								  								                                   </ul>
-					
-                
-              </div>
-			              </div>
-          </li>
-		  		  <li class="nav-category-item ">
-            <div class="nav-category-content"><a id="uu"  class="title_65" href="category.php?id=65">耳机 音响</a>
-           
-		    <!--  <div class="links">
-			  			<!--  			  <a href="category.php?id=88">小米</a>
-			  			  			<!--  			  <a href="category.php?id=89">其他</a>
-			  			  			<!--  			  			<!--  			  			<!--  </div>
-			  -->
-			                <div class="nav-category-children">
-                <ul class="children-list">
-				                                                  <li><a href="category.php?id=88"><img src="themes/xiaomi/images/index/cat_88.jpg" alt=""><span class="text">小米</span></a></li>
-								                                                    <li><a href="category.php?id=89"><img src="themes/xiaomi/images/index/cat_89.jpg" alt=""><span class="text">其他</span></a></li>
-								                                                    <li><a href="category.php?id=90"><img src="themes/xiaomi/images/index/cat_90.jpg" alt=""><span class="text">苹果</span></a></li>
-								                                                    <li><a href="category.php?id=91"><img src="themes/xiaomi/images/index/cat_91.jpg" alt=""><span class="text">捷波朗</span></a></li>
-								                  </ul>
-                  
-                 
-				
-				<ul class="children-list">
-												  								  								  								                  </ul>
-					
-            
-				
-				<ul class="children-list">
-												  								  								  								                  </ul>
-					
-                       
-				
-				<ul class="children-list">
-												  								  								  								                                   </ul>
-					
-				
-				<ul class="children-list">
-												  								  								  								                                   </ul>
-					
-                
-              </div>
-			              </div>
-          </li>
-		  		  <li class="nav-category-item ">
-            <div class="nav-category-content"><a id="uu"  class="title_66" href="category.php?id=66">数据线 充电器</a>
-           
-		    <!--  <div class="links">
-			  			<!--  </div>
-			  -->
-			              </div>
-          </li>
-		  		  <li class="nav-category-item ">
-            <div class="nav-category-content"><a id="uu"  class="title_67" href="category.php?id=67">保护壳</a>
-           
-		    <!--  <div class="links">
-			  			<!--  			  <a href="category.php?id=92">三星</a>
-			  			  			<!--  			  <a href="category.php?id=93">苹果</a>
-			  			  			<!--  			  			<!--  </div>
-			  -->
-			                <div class="nav-category-children">
-                <ul class="children-list">
-				                                                  <li><a href="category.php?id=92"><img src="themes/xiaomi/images/index/cat_92.jpg" alt=""><span class="text">三星</span></a></li>
-								                                                    <li><a href="category.php?id=93"><img src="themes/xiaomi/images/index/cat_93.jpg" alt=""><span class="text">苹果</span></a></li>
-								                                                    <li><a href="category.php?id=94"><img src="themes/xiaomi/images/index/cat_94.jpg" alt=""><span class="text">定制</span></a></li>
-								                  </ul>
-                  
-                 
-				
-				<ul class="children-list">
-												  								  								                  </ul>
-					
-            
-				
-				<ul class="children-list">
-												  								  								                  </ul>
-					
-                       
-				
-				<ul class="children-list">
-												  								  								                                   </ul>
-					
-				
-				<ul class="children-list">
-												  								  								                                   </ul>
-					
-                
-              </div>
-			              </div>
-          </li>
-		  		  <li class="nav-category-item ">
-            <div class="nav-category-content"><a id="uu"  class="title_69" href="category.php?id=69">其他</a>
-           
-		    <!--  <div class="links">
-			  			<!--  			  <a href="category.php?id=68">车载配件</a>
-			  			  			<!--  			  <a href="category.php?id=84">u盘</a>
-			  			  			<!--  			  			<!--  			  			<!--  			  			<!--  </div>
-			  -->
-			                <div class="nav-category-children">
-                <ul class="children-list">
-				                                                  <li><a href="category.php?id=68"><img src="themes/xiaomi/images/index/cat_68.jpg" alt=""><span class="text">车载配件</span></a></li>
-								                                                    <li><a href="category.php?id=84"><img src="themes/xiaomi/images/index/cat_84.jpg" alt=""><span class="text">u盘</span></a></li>
-								                                                    <li><a href="category.php?id=85"><img src="themes/xiaomi/images/index/cat_85.jpg" alt=""><span class="text">电视机顶盒</span></a></li>
-								                                                    <li><a href="category.php?id=86"><img src="themes/xiaomi/images/index/cat_86.jpg" alt=""><span class="text">电池</span></a></li>
-								                                                    <li><a href="category.php?id=87"><img src="themes/xiaomi/images/index/cat_87.jpg" alt=""><span class="text">保护膜</span></a></li>
-								                  </ul>
-                  
-                 
-				
-				<ul class="children-list">
-												  								  								  								  								                  </ul>
-					
-            
-				
-				<ul class="children-list">
-												  								  								  								  								                  </ul>
-					
-                       
-				
-				<ul class="children-list">
-												  								  								  								  								                                   </ul>
-					
-				
-				<ul class="children-list">
-												  								  								  								  								                                   </ul>
-					
-                
-              </div>
-			              </div>
-          </li>
-		            
-        </ul>
-      </div>
-    </div>
-    <div class="nav-main">
-      <ul class="nav-main-list J_menuNavMain clearfix">
-        <li class="nav-main-item1 "> <a  href="category.php?id=43"><span class="text">手机</span></a> </li>
-                <li class="nav-main-item current"> <a  href="category.php?id=43" ><span class="text">配件</span><!--<span class="arrow"></span>--></a> 554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:18:"category.php?id=43";}554fcae493e564ee0dc75bdf2ebf94ca </li> 
-                <li class="nav-main-item "> <a  href="topic.php?topic_id=1" ><span class="text">厂家优惠</span><!--<span class="arrow"></span>--></a> 554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:20:"topic.php?topic_id=1";}554fcae493e564ee0dc75bdf2ebf94ca </li> 
-                <li class="nav-main-item "> <a  href="article_cat.php?id=8" ><span class="text">资讯中心</span><!--<span class="arrow"></span>--></a> 554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:20:"article_cat.php?id=8";}554fcae493e564ee0dc75bdf2ebf94ca </li> 
-                <li class="nav-main-item "> <a  href="topic.php?topic_id=1" ><span class="text">智能远程</span><!--<span class="arrow"></span>--></a> 554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:20:"topic.php?topic_id=1";}554fcae493e564ee0dc75bdf2ebf94ca </li> 
-                <li class="nav-main-item "> <a  href="topic.php?topic_id=1" ><span class="text">我的会员</span><!--<span class="arrow"></span>--></a> 554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:20:"topic.php?topic_id=1";}554fcae493e564ee0dc75bdf2ebf94ca </li> 
-                <li class="nav-main-item "> <a  href="topic.php?topic_id=1" ><span class="text">售后与客服</span><!--<span class="arrow"></span>--></a> 554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:20:"topic.php?topic_id=1";}554fcae493e564ee0dc75bdf2ebf94ca </li> 
-              </ul>
-    </div>
-	<div class="button"></div>
-  </div>
-   
-  <div class="open-buy-info"></div>
- 
-</div>
-<script>
+                    <a href="flow.php">购物车(0)</a>
+                </div>
+            </div>
+        </div>
+			<div class="nav">
+				<div class="wh">
+					<div class="top">
+						<div class="first"><a href="catalog.php" class="text1">商品总汇</a></div>
+						
+							<ul>
+								<li class="one "> 
+									<a  href="category.php?id=43"><span class="text">手机</span></a>
+								</li>
+																	<li class="other two_0 current"> 
+										<a  href="category.php?id=43" >
+											<span class="text">配件</span>
+											<!--<span class="arrow"></span>-->
+										</a> 
+										554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:18:"category.php?id=43";}554fcae493e564ee0dc75bdf2ebf94ca 
+									</li> 
+																	<li class="other two_1 "> 
+										<a  href="topic.php?topic_id=1" >
+											<span class="text">厂家优惠</span>
+											<!--<span class="arrow"></span>-->
+										</a> 
+										554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:20:"topic.php?topic_id=1";}554fcae493e564ee0dc75bdf2ebf94ca 
+									</li> 
+																	<li class="other two_2 "> 
+										<a  href="article_cat.php?id=8" >
+											<span class="text">资讯中心</span>
+											<!--<span class="arrow"></span>-->
+										</a> 
+										554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:20:"article_cat.php?id=8";}554fcae493e564ee0dc75bdf2ebf94ca 
+									</li> 
+																	<li class="other two_3 "> 
+										<a  href="topic.php?topic_id=1" >
+											<span class="text">智能远程</span>
+											<!--<span class="arrow"></span>-->
+										</a> 
+										554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:20:"topic.php?topic_id=1";}554fcae493e564ee0dc75bdf2ebf94ca 
+									</li> 
+																	<li class="other two_4 "> 
+										<a  href="topic.php?topic_id=1" >
+											<span class="text">我的会员</span>
+											<!--<span class="arrow"></span>-->
+										</a> 
+										554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:20:"topic.php?topic_id=1";}554fcae493e564ee0dc75bdf2ebf94ca 
+									</li> 
+																	<li class="other two_5 "> 
+										<a  href="topic.php?topic_id=1" >
+											<span class="text">售后与客服</span>
+											<!--<span class="arrow"></span>-->
+										</a> 
+										554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:20:"topic.php?topic_id=1";}554fcae493e564ee0dc75bdf2ebf94ca 
+									</li> 
+															</ul>
+							
+					</div>
+					<div class="bottom"></div>
+				</div>
+			</div>
+			
+    </header><script>
 /*css*/
 if (window.screen.width < 1280)
 {	

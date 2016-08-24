@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:1:{i:0;s:45:"D:/xampp/htdocs/e2828/themes/xiaomi/index.dwt";}s:7:"expires";i:1472010780;s:8:"maketime";i:1472007180;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:2:{i:0;s:45:"D:/xampp/htdocs/e2828/themes/xiaomi/index.dwt";i:1;s:59:"D:/xampp/htdocs/e2828/themes/xiaomi/library/page_header.lbi";}s:7:"expires";i:1472028207;s:8:"maketime";i:1472024607;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="ECSHOP v2.7.3" />
@@ -10,7 +10,25 @@
 <link rel="stylesheet" type="text/css" href="css/header.css" />
 </head>
 <body>
-	<header class="main-header">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>E家数码</title>
+<link rel="stylesheet" href="themes/xiaomi/css/base.min.css?2014050501" />
+<script src="themes/xiaomi/js/jquery.js"></script>
+<script type="text/javascript">
+var process_request = "正在处理您的请求...";
+</script>
+<script type="text/javascript">
+var isWidescreen=screen.width<1200;
+if (isWidescreen){
+document.getElementsByTagName("body")[0].className="w950";
+document.write("<link rel='stylesheet' type='text/css' href='themes/xiaomi/css/980base.css'>");
+}
+</script>
+<script src="http://apps.bdimg.com/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/lx.js"></script>
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<link rel="stylesheet" type="text/css" href="css/header.css" />
+<header class="main-header">
     	<div class="navtop">
         	<div class="auto">
             	<span><a href="index.php">欢迎光临汕头E家数码-最新手机报价网</a></span>
@@ -33,236 +51,353 @@
                     <p>品质如一</p>
                 </div>
                 <div class="form">
-				
-				<script type="text/javascript">
-    
-    <!--
-    function checkSearchForm()
-    {
-        if(document.getElementById('search').value)
-        {
-            return true;
-        }
-        else
-        {
-            alert("请输入搜索关键词！");
-            return false;
-        }
-    }
-    -->
-    
-    </script>
-	<script language="javascript">
-	function drop_cart_goods(id)
-	{
-		$.ajax({
-						type:"POST",
-						url:"flow.php?step=drop_cart_goods&id=" + id,
-						cache:false,
-						dataType:'json',     //接受数据格式
-						data:'',
-						success:function(result){
-							$('#J_miniCartList').html(result.message);
-							$('.J_cartNum').html('(' + result.goods_num + ')');
+			
+	<script type="text/javascript">
+		
+			<!--
+				function checkSearchForm()
+				{
+					if(document.getElementById('search').value)
+						{
+							return true;
 						}
+					else
+						{
+							alert("请输入搜索关键词！");
+							return false;
+						}
+				}
+			-->
+		
+	</script>
+	<script language="javascript">
+		function drop_cart_goods(id)
+			{
+				$.ajax({
+					type:"POST",
+					url:"flow.php?step=drop_cart_goods&id=" + id,
+					cache:false,
+					dataType:'json',     //接受数据格式
+					data:'',
+					success:function(result){
+						$('#J_miniCartList').html(result.message);
+						$('.J_cartNum').html('(' + result.goods_num + ')');
+					}
 					});
-	}
-	
+			}
 	</script>
 	<script type="text/javascript">
-   $(function(){
-    $(".pp").mouseover(function(){
-        $(this).addClass("c").siblings("li");
-    }).mouseout(function(){
-        $(this).removeClass("c").siblings("li");
-    });
-});
-		  
-		  
-		  	
+		$(function(){
+			$(".pp").mouseover(function(){
+				$(this).addClass("c").siblings("li");
+				}).mouseout(function(){
+				$(this).removeClass("c").siblings("li");
+			});
+		});  	
 	</script>
-                	<form id="J_searchForm"  action="search.php" method="get" onSubmit="return checkSearchForm()" >
-					<input  type="search" name="keywords" id="search" autocomplete="off" value="" placeholder="搜索您需要的商品" />
-                        <input type="submit" id="submit" value="&#xe60c;" />
-						
-                    </form>
-					
+			<form id="J_searchForm"  action="search.php" method="get" onSubmit="return checkSearchForm()" >
+				<input  type="search" name="keywords" id="search" autocomplete="off" value="" placeholder="搜索您需要的商品" />
+				<input type="submit" id="submit" value="&#xe60c;" />		
+			</form>
 					
                     <a href="flow.php">购物车(0)</a>
                 </div>
             </div>
         </div>
-        <div class="nav">
-        	<div class="wh">
-    			<div class="top">
-                    <div class="first"><a href="catalog.php" class="text1">商品总汇</a></div>
-                    
-                    <ul  >
-        <li class="one current"> <a  href="category.php?id=43"><span class="text">手机</span></a> </li>
-                <li class="other two_0 "> <a  href="category.php?id=43" ><span class="text">配件</span><!--<span class="arrow"></span>--></a> 554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:18:"category.php?id=43";}554fcae493e564ee0dc75bdf2ebf94ca </li> 
-                <li class="other two_1 "> <a  href="topic.php?topic_id=1" ><span class="text">厂家优惠</span><!--<span class="arrow"></span>--></a> 554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:20:"topic.php?topic_id=1";}554fcae493e564ee0dc75bdf2ebf94ca </li> 
-                <li class="other two_2 "> <a  href="article_cat.php?id=8" ><span class="text">资讯中心</span><!--<span class="arrow"></span>--></a> 554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:20:"article_cat.php?id=8";}554fcae493e564ee0dc75bdf2ebf94ca </li> 
-                <li class="other two_3 "> <a  href="topic.php?topic_id=1" ><span class="text">智能远程</span><!--<span class="arrow"></span>--></a> 554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:20:"topic.php?topic_id=1";}554fcae493e564ee0dc75bdf2ebf94ca </li> 
-                <li class="other two_4 "> <a  href="topic.php?topic_id=1" ><span class="text">我的会员</span><!--<span class="arrow"></span>--></a> 554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:20:"topic.php?topic_id=1";}554fcae493e564ee0dc75bdf2ebf94ca </li> 
-                <li class="other two_5 "> <a  href="topic.php?topic_id=1" ><span class="text">售后与客服</span><!--<span class="arrow"></span>--></a> 554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:20:"topic.php?topic_id=1";}554fcae493e564ee0dc75bdf2ebf94ca </li> 
-              </ul>
-        		</div>
-                <div class="bottom">
-                    
-                </div>
-            </div>
-        </div>
-    </header>
-    <main class="main-content">
-    	<div class=" mainsds auto">
-        	<div class="navleft">
-            	<ul >
+			<div class="nav">
+				<div class="wh">
+					<div class="top">
+						<div class="first"><a href="catalog.php" class="text1">商品总汇</a></div>
+						
+							<ul>
+								<li class="one current"> 
+									<a  href="category.php?id=43"><span class="text">手机</span></a>
+								</li>
+																	<li class="other two_0 "> 
+										<a  href="category.php?id=43" >
+											<span class="text">配件</span>
+											<!--<span class="arrow"></span>-->
+										</a> 
+										554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:18:"category.php?id=43";}554fcae493e564ee0dc75bdf2ebf94ca 
+									</li> 
+																	<li class="other two_1 "> 
+										<a  href="topic.php?topic_id=1" >
+											<span class="text">厂家优惠</span>
+											<!--<span class="arrow"></span>-->
+										</a> 
+										554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:20:"topic.php?topic_id=1";}554fcae493e564ee0dc75bdf2ebf94ca 
+									</li> 
+																	<li class="other two_2 "> 
+										<a  href="article_cat.php?id=8" >
+											<span class="text">资讯中心</span>
+											<!--<span class="arrow"></span>-->
+										</a> 
+										554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:20:"article_cat.php?id=8";}554fcae493e564ee0dc75bdf2ebf94ca 
+									</li> 
+																	<li class="other two_3 "> 
+										<a  href="topic.php?topic_id=1" >
+											<span class="text">智能远程</span>
+											<!--<span class="arrow"></span>-->
+										</a> 
+										554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:20:"topic.php?topic_id=1";}554fcae493e564ee0dc75bdf2ebf94ca 
+									</li> 
+																	<li class="other two_4 "> 
+										<a  href="topic.php?topic_id=1" >
+											<span class="text">我的会员</span>
+											<!--<span class="arrow"></span>-->
+										</a> 
+										554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:20:"topic.php?topic_id=1";}554fcae493e564ee0dc75bdf2ebf94ca 
+									</li> 
+																	<li class="other two_5 "> 
+										<a  href="topic.php?topic_id=1" >
+											<span class="text">售后与客服</span>
+											<!--<span class="arrow"></span>-->
+										</a> 
+										554fcae493e564ee0dc75bdf2ebf94camenu_goods|a:2:{s:4:"name";s:10:"menu_goods";s:3:"url";s:20:"topic.php?topic_id=1";}554fcae493e564ee0dc75bdf2ebf94ca 
+									</li> 
+															</ul>
+							
+					</div>
+					<div class="bottom"></div>
+				</div>
+			</div>
+			
+    </header>    <main class="main-content">
+			<div class=" mainsds auto">
+				<div class="navleft">
+				
+				
+					<ul class="ul" > 
+						 
+							                      
+							<li  class="li"><div  class="pp"><a id="a" class="img43" href="category.php?id=43" >手机分类</a>
+																	<div class="nav-category-children">
+										  <ul class="children-list">
+																									 														 <li ><a href="category.php?id=30"><span >苹果</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=31"><span >三星</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=32"><span >oppo</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=33"><span >vivo</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=34"><span >小米</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=35"><span >华为</span></a></li>
+													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   													 											   													 											   													 														 <li ><a href="category.php?id=36"><span >魅族</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=37"><span >乐视</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=38"><span >华硕</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=39"><span >360奇酷</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=40"><span >海信</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=41"><span >金立</span></a></li>
+													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 														 <li ><a href="category.php?id=44"><span >诺基亚</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=45"><span >HTC</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=46"><span >联想</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=47"><span >天语</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=49"><span >LG</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=50"><span >TCL</span></a></li>
+													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 														 <li ><a href="category.php?id=52"><span >中兴</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=53"><span >语信</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=54"><span >美图</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=55"><span >锤子</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=56"><span >微软</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=57"><span >一加</span></a></li>
+													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 											   													 														 <li ><a href="category.php?id=58"><span >酷派</span></a></li>
+													 											   										  </ul>
+									</div>
+								  
+							</li>
+						 
+							                      
+							<li  class="li"><div  class="pp"><a id="a" class="img60" href="category.php?id=60" >平板专区</a>
+																	<div class="nav-category-children">
+										  <ul class="children-list">
+																									 														 <li ><a href="category.php?id=62"><span >苹果</span></a></li>
+													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   										  </ul>
+										   <ul class="children-list">
+																									 											   										  </ul>
+										   <ul class="children-list">
+																									 											   										  </ul>
+										   <ul class="children-list">
+																									 											   										  </ul>
+									</div>
+								  
+							</li>
+						 
+							                      
+							<li  class="li"><div  class="pp"><a id="a" class="img59" href="category.php?id=59" >智能腕表</a>
+																	<div class="nav-category-children">
+										  <ul class="children-list">
+																									 														 <li ><a href="category.php?id=70"><span >小天才</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=71"><span >三星</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=72"><span >其他</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=73"><span >苹果</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=74"><span >华为</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=75"><span >360</span></a></li>
+													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   													 											   													 											   										  </ul>
+									</div>
+								  
+							</li>
+						 
+							                      
+							<li  class="li"><div  class="pp"><a id="a" class="img63" href="category.php?id=63" >手机储存卡</a>
+																	<div class="nav-category-children">
+										  <ul class="children-list">
+																									 														 <li ><a href="category.php?id=80"><span >万能读卡</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=81"><span >闪迪</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=82"><span >金士顿</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=83"><span >东芝</span></a></li>
+													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   										  </ul>
+									</div>
+								  
+							</li>
+						 
+							                      
+							<li  class="li"><div  class="pp"><a id="a" class="img64" href="category.php?id=64" >移动电源</a>
+																	<div class="nav-category-children">
+										  <ul class="children-list">
+																									 														 <li ><a href="category.php?id=76"><span >羽博</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=77"><span >米格</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=78"><span >乐友</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=79"><span >酷派</span></a></li>
+													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   										  </ul>
+									</div>
+								  
+							</li>
+						 
+							                      
+							<li  class="li"><div  class="pp"><a id="a" class="img65" href="category.php?id=65" >耳机 音响</a>
+																	<div class="nav-category-children">
+										  <ul class="children-list">
+																									 														 <li ><a href="category.php?id=88"><span >小米</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=89"><span >其他</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=90"><span >苹果</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=91"><span >捷波朗</span></a></li>
+													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   										  </ul>
+									</div>
+								  
+							</li>
+						 
+							                      
+							<li  class="li"><div  class="pp"><a id="a" class="img66" href="category.php?id=66" >数据线 充电器</a>
+								  
+							</li>
+						 
+							                      
+							<li  class="li"><div  class="pp"><a id="a" class="img67" href="category.php?id=67" >保护壳</a>
+																	<div class="nav-category-children">
+										  <ul class="children-list">
+																									 														 <li ><a href="category.php?id=92"><span >三星</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=93"><span >苹果</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=94"><span >定制</span></a></li>
+													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   										  </ul>
+									</div>
+								  
+							</li>
+						 
+							                      
+							<li  class="li"><div  class="pp"><a id="a" class="img69" href="category.php?id=69" >其他</a>
+																	<div class="nav-category-children">
+										  <ul class="children-list">
+																									 														 <li ><a href="category.php?id=68"><span >车载配件</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=84"><span >u盘</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=85"><span >电视机顶盒</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=86"><span >电池</span></a></li>
+													 											   													 														 <li ><a href="category.php?id=87"><span >保护膜</span></a></li>
+													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   													 											   										  </ul>
+										   <ul class="children-list">
+																									 											   													 											   													 											   													 											   													 											   										  </ul>
+									</div>
+								  
+							</li>
+						      
+					  </ul>
 				  
-                	<li ><div  class="pp"><a class="img43" href="category.php?id=43" >手机分类</a>
-                       					    <div class="nav-category-children">
-					    <ul class="children-list">
-					   	                                                  <li><a href="category.php?id=30"><span class="text">苹果</span></a></li>
-				          				                                                    <li><a href="category.php?id=31"><span class="text">三星</span></a></li>
-				          				                                                    <li><a href="category.php?id=32"><span class="text">oppo</span></a></li>
-				          				                                                    <li><a href="category.php?id=33"><span class="text">vivo</span></a></li>
-				          				                                                    <li><a href="category.php?id=34"><span class="text">小米</span></a></li>
-				          				                                                    <li><a href="category.php?id=35"><span class="text">华为</span></a></li>
-				          				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				                                  				  					   </ul>
-					   <div>
-					   					   </div>
-					  
-					</li>
-					  
-                	<li ><div  class="pp"><a class="img60" href="category.php?id=60" >平板专区</a>
-                       					    <div class="nav-category-children">
-					    <ul class="children-list">
-					   	                                                  <li><a href="category.php?id=62"><span class="text">苹果</span></a></li>
-				          				  					   </ul>
-					   <div>
-					   					   </div>
-					  
-					</li>
-					  
-                	<li ><div  class="pp"><a class="img59" href="category.php?id=59" >智能腕表</a>
-                       					    <div class="nav-category-children">
-					    <ul class="children-list">
-					   	                                                  <li><a href="category.php?id=70"><span class="text">小天才</span></a></li>
-				          				                                                    <li><a href="category.php?id=71"><span class="text">三星</span></a></li>
-				          				                                                    <li><a href="category.php?id=72"><span class="text">其他</span></a></li>
-				          				                                                    <li><a href="category.php?id=73"><span class="text">苹果</span></a></li>
-				          				                                                    <li><a href="category.php?id=74"><span class="text">华为</span></a></li>
-				          				                                                    <li><a href="category.php?id=75"><span class="text">360</span></a></li>
-				          				  					   </ul>
-					   <div>
-					   					   </div>
-					  
-					</li>
-					  
-                	<li ><div  class="pp"><a class="img63" href="category.php?id=63" >手机储存卡</a>
-                       					    <div class="nav-category-children">
-					    <ul class="children-list">
-					   	                                                  <li><a href="category.php?id=80"><span class="text">万能读卡</span></a></li>
-				          				                                                    <li><a href="category.php?id=81"><span class="text">闪迪</span></a></li>
-				          				                                                    <li><a href="category.php?id=82"><span class="text">金士顿</span></a></li>
-				          				                                                    <li><a href="category.php?id=83"><span class="text">东芝</span></a></li>
-				          				  					   </ul>
-					   <div>
-					   					   </div>
-					  
-					</li>
-					  
-                	<li ><div  class="pp"><a class="img64" href="category.php?id=64" >移动电源</a>
-                       					    <div class="nav-category-children">
-					    <ul class="children-list">
-					   	                                                  <li><a href="category.php?id=76"><span class="text">羽博</span></a></li>
-				          				                                                    <li><a href="category.php?id=77"><span class="text">米格</span></a></li>
-				          				                                                    <li><a href="category.php?id=78"><span class="text">乐友</span></a></li>
-				          				                                                    <li><a href="category.php?id=79"><span class="text">酷派</span></a></li>
-				          				  					   </ul>
-					   <div>
-					   					   </div>
-					  
-					</li>
-					  
-                	<li ><div  class="pp"><a class="img65" href="category.php?id=65" >耳机 音响</a>
-                       					    <div class="nav-category-children">
-					    <ul class="children-list">
-					   	                                                  <li><a href="category.php?id=88"><span class="text">小米</span></a></li>
-				          				                                                    <li><a href="category.php?id=89"><span class="text">其他</span></a></li>
-				          				                                                    <li><a href="category.php?id=90"><span class="text">苹果</span></a></li>
-				          				                                                    <li><a href="category.php?id=91"><span class="text">捷波朗</span></a></li>
-				          				  					   </ul>
-					   <div>
-					   					   </div>
-					  
-					</li>
-					  
-                	<li ><div  class="pp"><a class="img66" href="category.php?id=66" >数据线 充电器</a>
-                       					   </div>
-					  
-					</li>
-					  
-                	<li ><div  class="pp"><a class="img67" href="category.php?id=67" >保护壳</a>
-                       					    <div class="nav-category-children">
-					    <ul class="children-list">
-					   	                                                  <li><a href="category.php?id=92"><span class="text">三星</span></a></li>
-				          				                                                    <li><a href="category.php?id=93"><span class="text">苹果</span></a></li>
-				          				                                                    <li><a href="category.php?id=94"><span class="text">定制</span></a></li>
-				          				  					   </ul>
-					   <div>
-					   					   </div>
-					  
-					</li>
-					  
-                	<li ><div  class="pp"><a class="img69" href="category.php?id=69" >其他</a>
-                       					    <div class="nav-category-children">
-					    <ul class="children-list">
-					   	                                                  <li><a href="category.php?id=68"><span class="text">车载配件</span></a></li>
-				          				                                                    <li><a href="category.php?id=84"><span class="text">u盘</span></a></li>
-				          				                                                    <li><a href="category.php?id=85"><span class="text">电视机顶盒</span></a></li>
-				          				                                                    <li><a href="category.php?id=86"><span class="text">电池</span></a></li>
-				          				                                                    <li><a href="category.php?id=87"><span class="text">保护膜</span></a></li>
-				          				  					   </ul>
-					   <div>
-					   					   </div>
-					  
-					</li>
-					                   
-                </ul>
-            </div>
-            <div class="right">
-            	<div class="top">
-                    <div class="slideShow">
-                        <ul>
-                            <li><a href="#"><img src="themes/xiaomi/images/海报图/轮显1.jpg" /></a></li>
-                            <li><a href="#"><img src="themes/xiaomi/images/海报图/轮显2.jpg" /></a></li>
-                            <li><a href="#"><img src="themes/xiaomi/images/海报图/轮显1.jpg" /></a></li>
-                        </ul>
-                    	<span class="left"></span>
-                    	<span class="right"></span>
-                    </div>        
-                    <div class="showNav">          
-                        <ul>
-                            <li class="active">
-                            	<button type="button" data-role="none">1</button>
-                            </li>
-                            <li>
-                            	<button type="button" data-role="none">2</button>
-                            </li>
-                            <li>
-                            	<button type="button" data-role="none">3</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="bottom">
-                	<div class="bottomlitte"><a href="#"><img src="themes/xiaomi/images/海报图/三幅图海报1.jpg" /></a></div>
-                    <div class="bottomlitte"><a href="#"><img src="themes/xiaomi/images/海报图/三幅图海报2.jpg" /></a></div>
-                    <div class="bottomlitte"><a href="#"><img src="themes/xiaomi/images/海报图/三幅图海报3.jpg" /></a></div>
-                </div>
-            </div>
-            <div style="clear:both"></div>
-        </div>
+				</div>
+				<div class="right">
+					<div class="top">
+						<div class="slideShow">
+							<ul>
+								<li><a href="#"><img src="themes/xiaomi/images/海报图/轮显1.jpg" /></a></li>
+								<li><a href="#"><img src="themes/xiaomi/images/海报图/轮显2.jpg" /></a></li>
+								<li><a href="#"><img src="themes/xiaomi/images/海报图/轮显1.jpg" /></a></li>
+							</ul>
+							<span class="left"></span>
+							<span class="right"></span>
+						</div>        
+						<div class="showNav">          
+							<ul>
+								<li class="active">
+									<button type="button" data-role="none">1</button>
+								</li>
+								<li>
+									<button type="button" data-role="none">2</button>
+								</li>
+								<li>
+									<button type="button" data-role="none">3</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="bottom">
+						<div class="bottomlitte"><a href="#"><img src="themes/xiaomi/images/海报图/三幅图海报1.jpg" /></a></div>
+						<div class="bottomlitte"><a href="#"><img src="themes/xiaomi/images/海报图/三幅图海报2.jpg" /></a></div>
+						<div class="bottomlitte"><a href="#"><img src="themes/xiaomi/images/海报图/三幅图海报3.jpg" /></a></div>
+					</div>
+				</div>
+				<div style="clear:both"></div>
+			</div>
         <div class="mainnr auto">
         	<p class="bktj">爆款推荐</p>
             <div class="line">
