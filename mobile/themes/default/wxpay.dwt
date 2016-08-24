@@ -1,0 +1,64 @@
+<!-- 提交订单返回页面 -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png"/>
+	<title>微信支付 - {$shop_name}</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/head.css" rel="stylesheet" type="text/css" />
+	<link href="css/foot.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />	
+</head>
+<body> 
+	<div class="header"><a class="back" href="index.php"></a><span class="headline">微信支付</span><a class="search" href="search.php"></a></div>
+	<style type="text/css">
+/* 本例子css */
+.pay_bottom{
+	text-align:center;
+}
+.pay_bottom button{
+  display: inline-block;
+  min-width: 60px;
+  height: 40px;
+  padding: 0 15px;
+  border: 0;
+  background: #f40;
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-border-radius: 2px;
+  background: -webkit-gradient(linear,0 0,0 100%,color-stop(0,#f50),color-stop(1,#f40));
+  text-shadow: 0 -1px 1px #ca3511;
+  -webkit-box-shadow: 0 -1px 0 #bf3210 inset;
+  font-family:"Microsoft YaHei UI","Microsoft YaHei";
+} 
+.bee_order_sn{
+	font-family:"Microsoft YaHei UI","Microsoft YaHei";
+	font-size:20px;
+	text-align:center;
+}
+.bee_order_amount{
+	font-family:"Microsoft YaHei UI","Microsoft YaHei";
+	font-size:40px;
+	font-weight:bold;
+	text-align:center;
+}
+.content{ padding-top:50px; padding-bottom:;}
+</style>
+<section class="content">
+	<div id="viewport" class="viewport">
+		<div class="bee_order_sn">订单号：{$order.order_sn}</div>
+		<div class="bee_order_amount">{$order.order_amount_formated}</div>
+		<div class="pay_bottom">{$pay_online}</div>
+	</div>
+</section>
+</body>
+</html>

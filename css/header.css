@@ -1,0 +1,205 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body,div,ul,li,a{
+	margin:0px;padding:0px;list-style-type:none;text-decoration:none;border:0;
+}
+body{font-size:62.5%;font-family:微软雅黑;}
+
+.auto{
+	margin:0 auto;
+	width:1280px;
+}
+.main-header .navtop{
+	background:#fafafa;
+	height:34px;
+	color:#a4a4a4;
+	line-height:34px;
+	font-family:微软雅黑;
+}
+.main-header .navtop span{
+	font-size:1.2em;
+	float:left;
+}
+.main-header .navtop .post{
+	float:right;
+	width: 180px;
+	
+}
+.main-header .navtop ul li{
+	font-size:1.2em;
+	float:left;
+}
+.main-header .navtop ul li a{
+	color:#a4a4a4;
+	}
+.main-header .navtop ul li a:hover{
+	color:#CCC;
+}
+.main-header .navtop ul li span{
+	margin:0 15px 0 15px;
+	font-size:1em;
+	float: initial;
+}
+.logo{
+	height:110px;
+}
+.logo .fixed{
+	height:57px;
+	padding-top:32px;
+}
+.logo .fixed .left{
+	float:left;
+}
+.logo .fixed .img{
+	display:block;
+	height:57px;
+	width:251px;
+	float:left;
+}
+.logo .fixed .left span{
+	widht:280px;
+	height:57px;
+	color:#a4a4a4;
+	font-size:4.5em;
+	font-weight:100;
+	float:left;
+}
+.logo .fixed .left p{
+	font-size:1.1em;
+	color:#a4a4a4;
+	margin-left:8px;
+}
+.logo .fixed .form{
+	float:right;
+	padding-top:10px;
+}
+.logo .fixed .form form{
+	float:left;
+	position:relative;
+	margin-right:15px;
+}
+.logo .fixed .form #search{
+	width:397px;
+	height:43px;
+	border:solid 1px #ececec;
+}
+.logo .fixed .form #submit{
+	width:41px;
+	height:43px;
+	position:absolute;
+	right:0px;
+	top:0px;
+	background:#fff;
+	border:solid 1px #ececec;
+	cursor: pointer;
+}
+.logo .fixed .form a{
+	display:block;
+	width:124px;
+	height:43px;
+	background:#f18e1d;
+	line-height:43px;
+	text-align:center;
+	float:left;
+	color:#fff;
+	font-size:1.3em;
+}
+
+.wh{
+	height:57px;
+	width:1280px;
+	margin:0 auto;
+}
+.wh .top{
+	height:42px;
+	position:relative
+}
+.wh .top .first{
+	height:42px;
+	width:125px;
+	background:url(../images/0.jpg);
+	float:left;
+	position:absolute;
+	font-size:1.8em;
+	color:#ffffff;
+	text-align:center;
+	line-height:42px;
+}
+.wh .top .other{
+	height:42px;
+	width:208px;
+	background:url(../images/2.jpg);
+	float:left;	
+	position:absolute;
+	font-size:1.5em;
+	color:#808080;
+	text-align:center;
+	line-height:42px;
+}
+.wh .top .one{
+	height:42px;
+	width:194px;
+	background:url(../images/1.jpg);
+	float:left;
+	position:absolute;
+	left:125px;
+	font-size:1.5em;
+	color:#808080;
+	text-align:center;
+	line-height:42px;
+}
+.wh .top .two_0{
+	left:271px;
+}
+.wh .top .two_1{
+	left:415px;
+}
+.wh .top .two_2{
+	left:573px;
+}
+.wh .top .two_3{
+	left:734px;
+}
+.wh .top .two_4{
+	left:895px;
+}
+.wh .top .two_5{
+	left:1056px;
+}
+.wh .top .text{
+	color:#808080;
+}
+.wh .top .text1{
+	color:#fff;
+}
+.wh .top .one:hover{
+	z-index:8;
+	background:url(../images/1-1.jpg);
+	color:#fff;
+}
+.wh .top .one:hover span {
+   color:#fff;
+}
+.wh .top .other:hover{
+	z-index:8;
+	background:url(../images/2-2.jpg);
+	color:#fff;
+	
+}
+.wh .top .other:hover span {
+   color:#fff;
+}
+
+.wh .bottom{
+	background:#f18e1d url(../images/横条.jpg) top right no-repeat;
+	height:15px;
+	width:1280px;
+	float:left;
+}
+
+
+
+
+
+

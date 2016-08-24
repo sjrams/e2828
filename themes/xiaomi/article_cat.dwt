@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<!--当前位置 start-->
+<div class="blockw box">
+ <div id="ur_here">
+  <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+ </div>
+</div>
+<!--当前位置 end-->
+
+<div class="blank">
+<div class="block clearfix">
+  <!--left start-->
+  <div class="AreaL">
+  <!-- #BeginLibraryItem "/library/new_articles.lbi" --> <!-- #EndLibraryItem -->
+    <!-- TemplateBeginEditable name="左边区域" -->
+<!-- #BeginLibraryItem "/library/cat_articles.lbi" -->
+
+<div class="left-1">
+<h3 >{$articles_cat.name|escape:html}</h3>
+<ul class="left-top">
+
+<!--{foreach from=$articles item=article_item name=articles}-->
+
+<li {if $smarty.foreach.articles.iteration eq 1}class="first"{/if}><a  href="{$article_item.url}"><span class="dot1">{$smarty.foreach.articles.iteration}</span>{$article_item.short_title}<i class="iconfont"></i></a></li>
+
+<!--{/foreach}-->
+</ul>
+</div>
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+
+    <!--AD end-->
+    </div>
+  <!--left end-->
+  <!--right start-->
+  <div class="AreaR">
+   <div class="box">
+   <div class="box_1">
+  <!--  <h3><span>{$cat_name}</span></h3> -->
+    <div class="RelaArticle">
+    <!--{foreach from=$article_categories item=cat name=cat}-->
+
+    <a class="{if  $cat_id  eq  $cat.id } select {/if} "  href="{$cat.url}">{$cat.name|escape:html}</a> 
+
+      <!--{foreach from=$cat.children name=cat.children item=child}-->
+     <!-- <a  class="ww" href="{$child.url}" style="background-image:none;">{$child.name|escape:html}</a> -->
+	  
+	     <!--{/foreach}-->
+		  
+      <!--{/foreach}-->
+    
+  </div>
+    <div class="boxCenterList">
+        
+	<div class="on-whole">
+	  <!-- {foreach from=$artciles_list item=article} -->
+
+   
+    <div class="blog-list">
+	     <div class="blog-thumb"> 
+	    <p class="title"><a href="{$article.url}" title="{$article.title|escape:html}" class="f6">{$article.short_title}</a><p> 
+	         <div class="blog-two">  {$article.author} | {$article.add_time}&nbsp; &nbsp;人气：{$article.click_count}</div>
+	        <p class="image"><a   href="{$article.url}" target="_blank"><img    src="{$article.file_url} " /></a></p>
+	        <p class="text"><a  href="{$article.url}" target="_blank">{$article.content|truncate:160}</a></p>
+			<p  class="more"><a href="{$article.url}" target="_blank">更多>></a></p>
+	  
+	       </div>    
+	  </div>
+ 
+
+		
+		
+      <!-- {/foreach} -->
+	     <div class="pager">
+		 	<!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+			
+  </div>
+	 </div>
+
+	
+	
+    </div>
+   </div>
+  </div>
+  <div class="blank5"></div>
+ 
+  
+  <!--right end-->
+</div>
+<div class="blank5"></div>
+</div>
+<!--帮助-->
+<div class="block">
+  <div class="box">
+   <div class="helpTitBg clearfix">
+    <!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem -->
+   </div>
+  </div>  
+</div>
+<div class="blank"></div>
+<!--帮助-->
+<!--友情链接 start-->
+<!--{if $img_links  or $txt_links }-->
+<div id="bottomNav" class="box">
+ <div class="box_1">
+  <div class="links clearfix">
+    <!--开始图片类型的友情链接{foreach from=$img_links item=link}-->
+    <a href="{$link.url}" target="_blank" title="{$link.name}"><img src="{$link.logo}" alt="{$link.name}" border="0" /></a>
+    <!--结束图片类型的友情链接{/foreach}-->
+    <!-- {if $txt_links} -->
+    <!--开始文字类型的友情链接{foreach from=$txt_links item=link}-->
+    [<a href="{$link.url}" target="_blank" title="{$link.name}">{$link.name}</a>] 
+    <!--结束文字类型的友情链接{/foreach}-->
+    <!-- {/if} -->
+  </div>
+ </div>
+</div>
+<!--{/if}-->
+<!--友情链接 end-->
+<div class="blank"></div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+
+<script type="text/javascript">
+document.getElementById('cur_url').value = window.location.href;
+</script>
+<!--<script  type="text/javascript">
+   $(function(){
+          $("body").on("click",".oppo-tj",function(){
+		 document.oppo-tj.setAttribute("class","oppo-tj1");
+		  }); 
+	  });
+</script>-->
+<!--<script type="text/javascript">
+$(function(){
+    $(".box_1 a").click(function(){
+        $(this).addClass("select");
+        $(this).siblings().removeClass("select");
+		return false; 
+    });
+});
+</script>
+-->
+</html>

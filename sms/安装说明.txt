@@ -1,0 +1,19 @@
+小米商城2015旗舰版+团购+手机版
+
+1：打开：网址/diguo/index.php 用户密码是admin   123456 登录进去配置数据库信息。
+
+2：用帝国还原恢复数据库。(http://www.htwl168.com/list.php?id=357  详细教程)
+
+3、修改data文件夹里的config.php (data/config.php)数据库配置信息
+
+4：登录网站后台，网址：域名/admin/index.php  帐号是：admin 密码：admin888
+
+
+
+程序使用咨询QQ：275194004  TEL:18175863383   官网: http://www.htwl168.com   
+
+程序演示地址:http://mi.htwl666.com/
+
+小米商城2015旗舰版+团购+手机版
+
+

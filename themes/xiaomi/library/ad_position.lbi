@@ -1,0 +1,15 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>  
+	.header-ggg{}
+       .header-gggl{   
+	          height: 215px;
+    border: 1px solid #ccc;
+	   
+	        }
+
+      </style>
+	  <div class="header-ggg">
+  <div  class="header-gggl">
+  {insert name='ads' id=$ads_id num=$ads_num } 
+  </div>
+  <div>
