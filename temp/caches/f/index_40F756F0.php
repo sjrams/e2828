@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:1:{i:0;s:45:"D:/xampp/htdocs/e2828/themes/xiaomi/index.dwt";}s:7:"expires";i:1471949686;s:8:"maketime";i:1471946086;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:1:{i:0;s:45:"D:/xampp/htdocs/e2828/themes/xiaomi/index.dwt";}s:7:"expires";i:1472010780;s:8:"maketime";i:1472007180;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="ECSHOP v2.7.3" />
