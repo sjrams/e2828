@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:2:{i:0;s:45:"D:/xampp/htdocs/e2828/themes/xiaomi/index.dwt";i:1;s:59:"D:/xampp/htdocs/e2828/themes/xiaomi/library/page_header.lbi";}s:7:"expires";i:1472028207;s:8:"maketime";i:1472024607;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:2:{i:0;s:45:"D:/xampp/htdocs/e2828/themes/xiaomi/index.dwt";i:1;s:59:"D:/xampp/htdocs/e2828/themes/xiaomi/library/page_header.lbi";}s:7:"expires";i:1472034854;s:8:"maketime";i:1472031254;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="ECSHOP v2.7.3" />
@@ -162,7 +162,8 @@ document.write("<link rel='stylesheet' type='text/css' href='themes/xiaomi/css/9
 				</div>
 			</div>
 			
-    </header>    <main class="main-content">
+    </header>
+	    <main class="main-content">
 			<div class=" mainsds auto">
 				<div class="navleft">
 				
@@ -369,31 +370,43 @@ document.write("<link rel='stylesheet' type='text/css' href='themes/xiaomi/css/9
 					<div class="top">
 						<div class="slideShow">
 							<ul>
-								<li><a href="#"><img src="themes/xiaomi/images/海报图/轮显1.jpg" /></a></li>
-								<li><a href="#"><img src="themes/xiaomi/images/海报图/轮显2.jpg" /></a></li>
-								<li><a href="#"><img src="themes/xiaomi/images/海报图/轮显1.jpg" /></a></li>
+															<li><a href="http://www.e2828.cn/e2828/goods.php?id=27" target="_blank"><img src="data/afficheimg/20140921cqgiip.jpg" /></a></li>
+							 								<li><a href="http://www.e2828.cn/e2828/search.php?encode=YToyOntzOjg6ImtleXdvcmRzIjtzOjg6ImlwaG9uZXNlIjtzOjE4OiJzZWFyY2hfZW5jb2RlX3RpbWUiO2k6MTQ2NjA0MTE4Njt9" target="_blank"><img src="data/afficheimg/20160616ocapnv.jpg" /></a></li>
+							 								<li><a href="http://www.e2828.cn/e2828/search.php?encode=YToyOntzOjg6ImtleXdvcmRzIjtzOjU6Im1ldGFsIjtzOjE4OiJzZWFyY2hfZW5jb2RlX3RpbWUiO2k6MTQ2NjA0MTQxNDt9" target="_blank"><img src="data/afficheimg/20160616hcsteb.jpg" /></a></li>
+							 								<li><a href="http://www.e2828.cn/e2828/goods.php?id=28" target="_blank"><img src="data/afficheimg/20160616kofzwe.jpg" /></a></li>
+							 								<li><a href="http://www.e2828.cn/e2828/goods.php?id=53" target="_blank"><img src="data/afficheimg/20160616uytevn.jpg" /></a></li>
+							  
 							</ul>
 							<span class="left"></span>
 							<span class="right"></span>
 						</div>        
 						<div class="showNav">          
 							<ul>
-								<li class="active">
-									<button type="button" data-role="none">1</button>
+							 
+														    								<li class="active">
+									<button  type="button" data-role="none"></button>
 								</li>
-								<li>
-									<button type="button" data-role="none">2</button>
+															 							    								<li>
+									<button  type="button" data-role="none"></button>
 								</li>
-								<li>
-									<button type="button" data-role="none">3</button>
+															 							    								<li>
+									<button  type="button" data-role="none"></button>
 								</li>
+															 							    								<li>
+									<button  type="button" data-role="none"></button>
+								</li>
+															 							    								<li>
+									<button  type="button" data-role="none"></button>
+								</li>
+															  
 							</ul>
 						</div>
 					</div>
 					<div class="bottom">
-						<div class="bottomlitte"><a href="#"><img src="themes/xiaomi/images/海报图/三幅图海报1.jpg" /></a></div>
-						<div class="bottomlitte"><a href="#"><img src="themes/xiaomi/images/海报图/三幅图海报2.jpg" /></a></div>
-						<div class="bottomlitte"><a href="#"><img src="themes/xiaomi/images/海报图/三幅图海报3.jpg" /></a></div>
+					 						<div class="bottomlitte"><a href="affiche.php?ad_id=1&uri=http://www.e2828.cn/e2828/goods.php?id=25" target="_blank"><img alt="3" src="data/afficheimg/1465952555747683389.jpg" /></a></div>
+											<div class="bottomlitte"><a href="affiche.php?ad_id=2&uri=http://www.e2828.cn/e2828/search.php?encode=YToyOntzOjg6ImtleXdvcmRzIjtzOjU6Im1ldGFsIjtzOjE4OiJzZWFyY2hfZW5jb2RlX3RpbWUiO2k6MTQ2NTk4MjYwMjt9" target="_blank"><img alt="3" src="data/afficheimg/1465952568898035130.jpg" /></a></div>
+											<div class="bottomlitte"><a href="affiche.php?ad_id=3&uri=" target="_blank"><img alt="3" src="data/afficheimg/1465952578712604830.jpg" /></a></div>
+						
 					</div>
 				</div>
 				<div style="clear:both"></div>
@@ -417,45 +430,130 @@ document.write("<link rel='stylesheet' type='text/css' href='themes/xiaomi/css/9
                 </div>
             </div>
             <div class="mainbk">
-            	<div class="left">                	
-                    <div class="ring"><img src="themes/xiaomi/images/海报图/爆款推荐.jpg" /></div>
-                    <div class="mring mring1">
-                        <span class="label">
-                            <span class="title">苹果ipone SE</span>
-                            <span class="jiage">¥2820.00 销量:110件</span>
-                        </span>
-                        <span class="bigimg"><img src="themes/xiaomi/images/226×226.jpg" /></span>
-                    </div>
+            	<div class="left">
+										                	
+                    <div class="ring"><a href="affiche.php?ad_id=4&uri=" target="_blank"><img src="data/afficheimg/1465953016095686024.jpg" alt="首页-新品上架广告" /></a></div>
+					 	
+																							<div class="mring mring1">
+								<span class="label">
+									<span class="title">
+										<a href="goods.php?id=58" target="_blank">
+											OPPO R9(全网通)										</a>
+									</span>
+									<span class="jiage">
+																					￥2499.00																			</span>
+								</span>
+								<span class="bigimg">
+									<a  href="goods.php?id=58" target="_blank">
+										<img src="images/201606/thumb_img/58_thumb_G_1464825362901.jpg"  alt="OPPO R9(全网通)"/>
+									</a>
+								</span>
+							</div>
+							
+												
+												
+												
+												
+												
+												
+												
+										<div class="mring">
+												
+																			<div class="min">
+									<span class="label minlabel">
+										<span class="title">
+											<a href="goods.php?id=59" target="_blank">
+												OPPO R9 Plus(全网...											</a>
+										</span>
+										<span class="jiage">
+																							￥0.10																					</span>
+									</span>
+									<span class="minimg">
+										<a href="goods.php?id=59" target="_blank">
+											<img src="images/201606/thumb_img/59_thumb_G_1464827830093.jpg" alt="OPPO R9 Plus(全网通)" />
+										</a>
+									</span>
+								</div>
+							
+							
+												
+												
+												
+												
+												
+												
+																	
+												
+																		
+								<div class="min">
+									<span class="label minlabel">
+										<span class="title">
+											<a href="goods.php?id=17" target="_blank">
+												苹果iPhone SE(移动/...											</a>
+										</span>
+										<span class="jiage">
+																							￥2820.00																					</span>
+									</span>
+									<span class="minimg">
+										<a href="goods.php?id=17" target="_blank">
+											<img src="images/201606/thumb_img/17_thumb_G_1464820071298.jpg" alt="苹果iPhone SE(移动/联通双4G)" />
+										</a>
+									</span>
+								</div>
+							
+							
+												
+												
+												
+												
+												
+										</div>
+					<div class="mring">
+														
+														
+														
+																					<span class="label">
+									<span class="title">
+										<a href="goods.php?id=18" target="_blank">
+											苹果iPhone SE(全网通...										</a>
+									</span>
+									<span class="jiage">
+																					￥3000.00																			</span>
+								</span>
+								<span class="bigimg">
+									<a href="goods.php?id=18" target="_blank">
+										<img src="images/201606/thumb_img/18_thumb_G_1464820060673.jpg" alt="苹果iPhone SE(全网通)" />
+									</a>
+								</span>
+								
+														
+														
+														
+														
+											</div>
                     <div class="mring">
-                    	<div class="min">
-                        	<span class="label minlabel">
-                        		<span class="title">苹果ipone SE</span>
-                           	 	<span class="jiage">¥2820.00 销量:110件</span>
-                        	</span>
-                        	<span class="minimg"><img src="themes/xiaomi/images/128×128.jpg" /></span>
-                        </div>
-                        <div class="min">
-                        	<span class="label minlabel">
-                        		<span class="title">苹果ipone SE</span>
-                            	<span class="jiage">¥2820.00 销量:110件</span>
-                        	</span>
-                        	<span class="minimg"><img src="themes/xiaomi/images/128×128.jpg" /></span>
-                        </div>
-                    </div>
-                    <div class="mring">
-                    	<span class="label">
-                        	<span class="title">苹果ipone SE</span>
-                            <span class="jiage">¥2820.00 销量:110件</span>
-                        </span>
-                        <span class="bigimg"><img src="themes/xiaomi/images/226×226.jpg" /></span>
-                    </div>
-                    <div class="mring">
-                    	<span class="label">
-                        	<span class="title">苹果ipone SE</span>
-                            <span class="jiage">¥2820.00 销量:110件</span>
-                        </span>
-                        <span class="bigimg"><img src="themes/xiaomi/images/226×226.jpg" /></span>
-                    </div>
+														
+														
+														
+														
+																					<span class="label">
+									<span class="title">
+										<a href="goods.php?id=131" target="_blank">
+											360 手机f4(移动4G)										</a>
+									</span>
+									<span class="jiage">
+																					￥270.00																			</span>
+								</span>
+								<span class="bigimg">
+									<a href="goods.php?id=131" target="_blank">
+										<img src="images/201606/thumb_img/131_thumb_G_1464909312303.jpg" alt="360 手机f4(移动4G)"  />
+									</a>
+								</span>
+								
+														
+														
+														
+						                    </div>
                 </div>
                 <div class="right">
                 	<div class="crbb">

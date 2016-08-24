@@ -69,31 +69,34 @@
 					<div class="top">
 						<div class="slideShow">
 							<ul>
-								<li><a href="#"><img src="images/海报图/轮显1.jpg" /></a></li>
-								<li><a href="#"><img src="images/海报图/轮显2.jpg" /></a></li>
-								<li><a href="#"><img src="images/海报图/轮显1.jpg" /></a></li>
+							{foreach from=get_flash_xml() item=playerdb name=get_flash_xml}
+								<li><a href="{$playerdb.url}" target="_blank"><img src="{$playerdb.src}" /></a></li>
+							 {/foreach} 
 							</ul>
 							<span class="left"></span>
 							<span class="right"></span>
 						</div>        
 						<div class="showNav">          
 							<ul>
+							 
+							{foreach from=get_flash_xml() item=playerdb name=get_flash_xml key = sn}
+							    {if $sn==0}
 								<li class="active">
-									<button type="button" data-role="none">1</button>
+									<button  type="button" data-role="none"></button>
 								</li>
+								{else}
 								<li>
-									<button type="button" data-role="none">2</button>
+									<button  type="button" data-role="none"></button>
 								</li>
-								<li>
-									<button type="button" data-role="none">3</button>
-								</li>
+								{/if}
+							 {/foreach} 
 							</ul>
 						</div>
 					</div>
 					<div class="bottom">
-						<div class="bottomlitte"><a href="#"><img src="images/海报图/三幅图海报1.jpg" /></a></div>
-						<div class="bottomlitte"><a href="#"><img src="images/海报图/三幅图海报2.jpg" /></a></div>
-						<div class="bottomlitte"><a href="#"><img src="images/海报图/三幅图海报3.jpg" /></a></div>
+					 {foreach from=get_advlist_by_id(1) item=ad name=index_image}
+						<div class="bottomlitte"><a href="{$ad.url}" target="_blank"><img alt="3" src="{$ad.image}" /></a></div>
+					{/foreach}	
 					</div>
 				</div>
 				<div style="clear:both"></div>
@@ -117,44 +120,141 @@
                 </div>
             </div>
             <div class="mainbk">
-            	<div class="left">                	
-                    <div class="ring"><img src="images/海报图/爆款推荐.jpg" /></div>
-                    <div class="mring mring1">
-                        <span class="label">
-                            <span class="title">苹果ipone SE</span>
-                            <span class="jiage">¥2820.00 销量:110件</span>
-                        </span>
-                        <span class="bigimg"><img src="images/226×226.jpg" /></span>
-                    </div>
+            	<div class="left">
+					{foreach from=get_advlist_by_id(2) item=ad name=index_image}
+					{if $smarty.foreach.index_image.iteration eq 1}                	
+                    <div class="ring"><a href="{$ad.url}" target="_blank"><img src="{$ad.image}" alt="{$ad.name}" /></a></div>
+					 {/if}	
+					{/foreach}
+					<!--{foreach from=get_cat_new_goods(0) item=goods name=new_goods}-->
+						{if $smarty.foreach.new_goods.iteration eq 1}
+							<div class="mring mring1">
+								<span class="label">
+									<span class="title">
+										<a href="{$goods.url}" target="_blank">
+											{$goods.short_name|escape:html}
+										</a>
+									</span>
+									<span class="jiage">
+										<!-- {if $goods.promote_price neq ""} -->
+											{$goods.promote_price}
+										<!-- {else}-->
+											{$goods.shop_price}
+										<!--{/if}-->
+									</span>
+								</span>
+								<span class="bigimg">
+									<a  href="{$goods.url}" target="_blank">
+										<img src="{$goods.thumb}"  alt="{$goods.name|escape:html}"/>
+									</a>
+								</span>
+							</div>
+						{/if}	
+					<!--{/foreach}-->
+					<div class="mring">
+					<!--{foreach from=get_cat_new_goods(0) item=goods name=new_goods}-->
+						{if $smarty.foreach.new_goods.iteration eq 2}
+								<div class="min">
+									<span class="label minlabel">
+										<span class="title">
+											<a href="{$goods.url}" target="_blank">
+												{$goods.short_name|escape:html}
+											</a>
+										</span>
+										<span class="jiage">
+											<!-- {if $goods.promote_price neq ""} -->
+												{$goods.promote_price}
+											<!-- {else}-->
+												{$goods.shop_price}
+											<!--{/if}-->
+										</span>
+									</span>
+									<span class="minimg">
+										<a href="{$goods.url}" target="_blank">
+											<img src="{$goods.thumb}" alt="{$goods.name|escape:html}" />
+										</a>
+									</span>
+								</div>
+							
+						{/if}	
+					<!--{/foreach}-->
+					<!--{foreach from=get_cat_new_goods(0) item=goods name=new_goods}-->
+						{if $smarty.foreach.new_goods.iteration eq 3}
+							
+								<div class="min">
+									<span class="label minlabel">
+										<span class="title">
+											<a href="{$goods.url}" target="_blank">
+												{$goods.short_name|escape:html}
+											</a>
+										</span>
+										<span class="jiage">
+											<!-- {if $goods.promote_price neq ""} -->
+												{$goods.promote_price}
+											<!-- {else}-->
+												{$goods.shop_price}
+											<!--{/if}-->
+										</span>
+									</span>
+									<span class="minimg">
+										<a href="{$goods.url}" target="_blank">
+											<img src="{$goods.thumb}" alt="{$goods.name|escape:html}" />
+										</a>
+									</span>
+								</div>
+							
+						{/if}	
+					<!--{/foreach}-->
+					</div>
+					<div class="mring">
+						<!--{foreach from=get_cat_new_goods(0) item=goods name=new_goods}-->
+							{if $smarty.foreach.new_goods.iteration eq 4}
+								<span class="label">
+									<span class="title">
+										<a href="{$goods.url}" target="_blank">
+											{$goods.short_name|escape:html}
+										</a>
+									</span>
+									<span class="jiage">
+										<!-- {if $goods.promote_price neq ""} -->
+											{$goods.promote_price}
+										<!-- {else}-->
+											{$goods.shop_price}
+										<!--{/if}-->
+									</span>
+								</span>
+								<span class="bigimg">
+									<a href="{$goods.url}" target="_blank">
+										<img src="{$goods.thumb}" alt="{$goods.name|escape:html}" />
+									</a>
+								</span>
+							{/if}	
+						<!--{/foreach}-->
+					</div>
                     <div class="mring">
-                    	<div class="min">
-                        	<span class="label minlabel">
-                        		<span class="title">苹果ipone SE</span>
-                           	 	<span class="jiage">¥2820.00 销量:110件</span>
-                        	</span>
-                        	<span class="minimg"><img src="images/128×128.jpg" /></span>
-                        </div>
-                        <div class="min">
-                        	<span class="label minlabel">
-                        		<span class="title">苹果ipone SE</span>
-                            	<span class="jiage">¥2820.00 销量:110件</span>
-                        	</span>
-                        	<span class="minimg"><img src="images/128×128.jpg" /></span>
-                        </div>
-                    </div>
-                    <div class="mring">
-                    	<span class="label">
-                        	<span class="title">苹果ipone SE</span>
-                            <span class="jiage">¥2820.00 销量:110件</span>
-                        </span>
-                        <span class="bigimg"><img src="images/226×226.jpg" /></span>
-                    </div>
-                    <div class="mring">
-                    	<span class="label">
-                        	<span class="title">苹果ipone SE</span>
-                            <span class="jiage">¥2820.00 销量:110件</span>
-                        </span>
-                        <span class="bigimg"><img src="images/226×226.jpg" /></span>
+						<!--{foreach from=get_cat_new_goods(0) item=goods name=new_goods}-->
+							{if $smarty.foreach.new_goods.iteration eq 5}
+								<span class="label">
+									<span class="title">
+										<a href="{$goods.url}" target="_blank">
+											{$goods.short_name|escape:html}
+										</a>
+									</span>
+									<span class="jiage">
+										<!-- {if $goods.promote_price neq ""} -->
+											{$goods.promote_price}
+										<!-- {else}-->
+											{$goods.shop_price}
+										<!--{/if}-->
+									</span>
+								</span>
+								<span class="bigimg">
+									<a href="{$goods.url}" target="_blank">
+										<img src="{$goods.thumb}" alt="{$goods.name|escape:html}"  />
+									</a>
+								</span>
+							{/if}	
+						<!--{/foreach}-->
                     </div>
                 </div>
                 <div class="right">

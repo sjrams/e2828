@@ -94,31 +94,46 @@ if ($this->_foreach['cat_cat_id']['total'] > 0):
 					<div class="top">
 						<div class="slideShow">
 							<ul>
-								<li><a href="#"><img src="themes/xiaomi/images/海报图/轮显1.jpg" /></a></li>
-								<li><a href="#"><img src="themes/xiaomi/images/海报图/轮显2.jpg" /></a></li>
-								<li><a href="#"><img src="themes/xiaomi/images/海报图/轮显1.jpg" /></a></li>
+							<?php $_from = get_flash_xml(); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'playerdb');$this->_foreach['get_flash_xml'] = array('total' => count($_from), 'iteration' => 0);
+if ($this->_foreach['get_flash_xml']['total'] > 0):
+    foreach ($_from AS $this->_var['playerdb']):
+        $this->_foreach['get_flash_xml']['iteration']++;
+?>
+								<li><a href="<?php echo $this->_var['playerdb']['url']; ?>" target="_blank"><img src="<?php echo $this->_var['playerdb']['src']; ?>" /></a></li>
+							 <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?> 
 							</ul>
 							<span class="left"></span>
 							<span class="right"></span>
 						</div>        
 						<div class="showNav">          
 							<ul>
+							 
+							<?php $_from = get_flash_xml(); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('sn', 'playerdb');$this->_foreach['get_flash_xml'] = array('total' => count($_from), 'iteration' => 0);
+if ($this->_foreach['get_flash_xml']['total'] > 0):
+    foreach ($_from AS $this->_var['sn'] => $this->_var['playerdb']):
+        $this->_foreach['get_flash_xml']['iteration']++;
+?>
+							    <?php if ($this->_var['sn'] == 0): ?>
 								<li class="active">
-									<button type="button" data-role="none">1</button>
+									<button  type="button" data-role="none"></button>
 								</li>
+								<?php else: ?>
 								<li>
-									<button type="button" data-role="none">2</button>
+									<button  type="button" data-role="none"></button>
 								</li>
-								<li>
-									<button type="button" data-role="none">3</button>
-								</li>
+								<?php endif; ?>
+							 <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?> 
 							</ul>
 						</div>
 					</div>
 					<div class="bottom">
-						<div class="bottomlitte"><a href="#"><img src="themes/xiaomi/images/海报图/三幅图海报1.jpg" /></a></div>
-						<div class="bottomlitte"><a href="#"><img src="themes/xiaomi/images/海报图/三幅图海报2.jpg" /></a></div>
-						<div class="bottomlitte"><a href="#"><img src="themes/xiaomi/images/海报图/三幅图海报3.jpg" /></a></div>
+					 <?php $_from = get_advlist_by_id(1); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'ad');$this->_foreach['index_image'] = array('total' => count($_from), 'iteration' => 0);
+if ($this->_foreach['index_image']['total'] > 0):
+    foreach ($_from AS $this->_var['ad']):
+        $this->_foreach['index_image']['iteration']++;
+?>
+						<div class="bottomlitte"><a href="<?php echo $this->_var['ad']['url']; ?>" target="_blank"><img alt="3" src="<?php echo $this->_var['ad']['image']; ?>" /></a></div>
+					<?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>	
 					</div>
 				</div>
 				<div style="clear:both"></div>
@@ -142,44 +157,165 @@ if ($this->_foreach['cat_cat_id']['total'] > 0):
                 </div>
             </div>
             <div class="mainbk">
-            	<div class="left">                	
-                    <div class="ring"><img src="themes/xiaomi/images/海报图/爆款推荐.jpg" /></div>
-                    <div class="mring mring1">
-                        <span class="label">
-                            <span class="title">苹果ipone SE</span>
-                            <span class="jiage">¥2820.00 销量:110件</span>
-                        </span>
-                        <span class="bigimg"><img src="themes/xiaomi/images/226×226.jpg" /></span>
-                    </div>
+            	<div class="left">
+					<?php $_from = get_advlist_by_id(2); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'ad');$this->_foreach['index_image'] = array('total' => count($_from), 'iteration' => 0);
+if ($this->_foreach['index_image']['total'] > 0):
+    foreach ($_from AS $this->_var['ad']):
+        $this->_foreach['index_image']['iteration']++;
+?>
+					<?php if ($this->_foreach['index_image']['iteration'] == 1): ?>                	
+                    <div class="ring"><a href="<?php echo $this->_var['ad']['url']; ?>" target="_blank"><img src="<?php echo $this->_var['ad']['image']; ?>" alt="<?php echo $this->_var['ad']['name']; ?>" /></a></div>
+					 <?php endif; ?>	
+					<?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
+					<?php $_from = get_cat_new_goods(0); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods');$this->_foreach['new_goods'] = array('total' => count($_from), 'iteration' => 0);
+if ($this->_foreach['new_goods']['total'] > 0):
+    foreach ($_from AS $this->_var['goods']):
+        $this->_foreach['new_goods']['iteration']++;
+?>
+						<?php if ($this->_foreach['new_goods']['iteration'] == 1): ?>
+							<div class="mring mring1">
+								<span class="label">
+									<span class="title">
+										<a href="<?php echo $this->_var['goods']['url']; ?>" target="_blank">
+											<?php echo htmlspecialchars($this->_var['goods']['short_name']); ?>
+										</a>
+									</span>
+									<span class="jiage">
+										<?php if ($this->_var['goods']['promote_price'] != ""): ?>
+											<?php echo $this->_var['goods']['promote_price']; ?>
+										<?php else: ?>
+											<?php echo $this->_var['goods']['shop_price']; ?>
+										<?php endif; ?>
+									</span>
+								</span>
+								<span class="bigimg">
+									<a  href="<?php echo $this->_var['goods']['url']; ?>" target="_blank">
+										<img src="<?php echo $this->_var['goods']['thumb']; ?>"  alt="<?php echo htmlspecialchars($this->_var['goods']['name']); ?>"/>
+									</a>
+								</span>
+							</div>
+						<?php endif; ?>	
+					<?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
+					<div class="mring">
+					<?php $_from = get_cat_new_goods(0); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods');$this->_foreach['new_goods'] = array('total' => count($_from), 'iteration' => 0);
+if ($this->_foreach['new_goods']['total'] > 0):
+    foreach ($_from AS $this->_var['goods']):
+        $this->_foreach['new_goods']['iteration']++;
+?>
+						<?php if ($this->_foreach['new_goods']['iteration'] == 2): ?>
+								<div class="min">
+									<span class="label minlabel">
+										<span class="title">
+											<a href="<?php echo $this->_var['goods']['url']; ?>" target="_blank">
+												<?php echo htmlspecialchars($this->_var['goods']['short_name']); ?>
+											</a>
+										</span>
+										<span class="jiage">
+											<?php if ($this->_var['goods']['promote_price'] != ""): ?>
+												<?php echo $this->_var['goods']['promote_price']; ?>
+											<?php else: ?>
+												<?php echo $this->_var['goods']['shop_price']; ?>
+											<?php endif; ?>
+										</span>
+									</span>
+									<span class="minimg">
+										<a href="<?php echo $this->_var['goods']['url']; ?>" target="_blank">
+											<img src="<?php echo $this->_var['goods']['thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['goods']['name']); ?>" />
+										</a>
+									</span>
+								</div>
+							
+						<?php endif; ?>	
+					<?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
+					<?php $_from = get_cat_new_goods(0); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods');$this->_foreach['new_goods'] = array('total' => count($_from), 'iteration' => 0);
+if ($this->_foreach['new_goods']['total'] > 0):
+    foreach ($_from AS $this->_var['goods']):
+        $this->_foreach['new_goods']['iteration']++;
+?>
+						<?php if ($this->_foreach['new_goods']['iteration'] == 3): ?>
+							
+								<div class="min">
+									<span class="label minlabel">
+										<span class="title">
+											<a href="<?php echo $this->_var['goods']['url']; ?>" target="_blank">
+												<?php echo htmlspecialchars($this->_var['goods']['short_name']); ?>
+											</a>
+										</span>
+										<span class="jiage">
+											<?php if ($this->_var['goods']['promote_price'] != ""): ?>
+												<?php echo $this->_var['goods']['promote_price']; ?>
+											<?php else: ?>
+												<?php echo $this->_var['goods']['shop_price']; ?>
+											<?php endif; ?>
+										</span>
+									</span>
+									<span class="minimg">
+										<a href="<?php echo $this->_var['goods']['url']; ?>" target="_blank">
+											<img src="<?php echo $this->_var['goods']['thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['goods']['name']); ?>" />
+										</a>
+									</span>
+								</div>
+							
+						<?php endif; ?>	
+					<?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
+					</div>
+					<div class="mring">
+						<?php $_from = get_cat_new_goods(0); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods');$this->_foreach['new_goods'] = array('total' => count($_from), 'iteration' => 0);
+if ($this->_foreach['new_goods']['total'] > 0):
+    foreach ($_from AS $this->_var['goods']):
+        $this->_foreach['new_goods']['iteration']++;
+?>
+							<?php if ($this->_foreach['new_goods']['iteration'] == 4): ?>
+								<span class="label">
+									<span class="title">
+										<a href="<?php echo $this->_var['goods']['url']; ?>" target="_blank">
+											<?php echo htmlspecialchars($this->_var['goods']['short_name']); ?>
+										</a>
+									</span>
+									<span class="jiage">
+										<?php if ($this->_var['goods']['promote_price'] != ""): ?>
+											<?php echo $this->_var['goods']['promote_price']; ?>
+										<?php else: ?>
+											<?php echo $this->_var['goods']['shop_price']; ?>
+										<?php endif; ?>
+									</span>
+								</span>
+								<span class="bigimg">
+									<a href="<?php echo $this->_var['goods']['url']; ?>" target="_blank">
+										<img src="<?php echo $this->_var['goods']['thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['goods']['name']); ?>" />
+									</a>
+								</span>
+							<?php endif; ?>	
+						<?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
+					</div>
                     <div class="mring">
-                    	<div class="min">
-                        	<span class="label minlabel">
-                        		<span class="title">苹果ipone SE</span>
-                           	 	<span class="jiage">¥2820.00 销量:110件</span>
-                        	</span>
-                        	<span class="minimg"><img src="themes/xiaomi/images/128×128.jpg" /></span>
-                        </div>
-                        <div class="min">
-                        	<span class="label minlabel">
-                        		<span class="title">苹果ipone SE</span>
-                            	<span class="jiage">¥2820.00 销量:110件</span>
-                        	</span>
-                        	<span class="minimg"><img src="themes/xiaomi/images/128×128.jpg" /></span>
-                        </div>
-                    </div>
-                    <div class="mring">
-                    	<span class="label">
-                        	<span class="title">苹果ipone SE</span>
-                            <span class="jiage">¥2820.00 销量:110件</span>
-                        </span>
-                        <span class="bigimg"><img src="themes/xiaomi/images/226×226.jpg" /></span>
-                    </div>
-                    <div class="mring">
-                    	<span class="label">
-                        	<span class="title">苹果ipone SE</span>
-                            <span class="jiage">¥2820.00 销量:110件</span>
-                        </span>
-                        <span class="bigimg"><img src="themes/xiaomi/images/226×226.jpg" /></span>
+						<?php $_from = get_cat_new_goods(0); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods');$this->_foreach['new_goods'] = array('total' => count($_from), 'iteration' => 0);
+if ($this->_foreach['new_goods']['total'] > 0):
+    foreach ($_from AS $this->_var['goods']):
+        $this->_foreach['new_goods']['iteration']++;
+?>
+							<?php if ($this->_foreach['new_goods']['iteration'] == 5): ?>
+								<span class="label">
+									<span class="title">
+										<a href="<?php echo $this->_var['goods']['url']; ?>" target="_blank">
+											<?php echo htmlspecialchars($this->_var['goods']['short_name']); ?>
+										</a>
+									</span>
+									<span class="jiage">
+										<?php if ($this->_var['goods']['promote_price'] != ""): ?>
+											<?php echo $this->_var['goods']['promote_price']; ?>
+										<?php else: ?>
+											<?php echo $this->_var['goods']['shop_price']; ?>
+										<?php endif; ?>
+									</span>
+								</span>
+								<span class="bigimg">
+									<a href="<?php echo $this->_var['goods']['url']; ?>" target="_blank">
+										<img src="<?php echo $this->_var['goods']['thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['goods']['name']); ?>"  />
+									</a>
+								</span>
+							<?php endif; ?>	
+						<?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
                     </div>
                 </div>
                 <div class="right">
