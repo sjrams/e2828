@@ -12,8 +12,6 @@
  <span class="sep">|</span>
  <a href="user.php?act=register">注册</a>
  <span class="sep">|</span>
-  <a href="">收藏</a>
-  
  <!--
  <a href="user.php?act=oath&type=qq"><img src="themes/xiaomi/images/qq_logo_16.png"></a>
 <a href="user.php?act=oath&type=weibo"><img src="themes/xiaomi/images/sina_login_16.png"></a>

@@ -7,7 +7,7 @@ $data = array (
     'measure_unit' => '',
     'parent_id' => '0',
     'is_show' => '1',
-    'show_in_nav' => '1',
+    'show_in_nav' => '0',
     'grade' => '7',
     'sort_order' => '1',
     'has_children' => '25',
@@ -119,71 +119,6 @@ $data = array (
   ),
   9 => 
   array (
-    'cat_id' => '36',
-    'cat_name' => '魅族',
-    'measure_unit' => '',
-    'parent_id' => '43',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '7',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => '14',
-  ),
-  10 => 
-  array (
-    'cat_id' => '56',
-    'cat_name' => '微软',
-    'measure_unit' => '',
-    'parent_id' => '43',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  11 => 
-  array (
-    'cat_id' => '53',
-    'cat_name' => '语信',
-    'measure_unit' => '',
-    'parent_id' => '43',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  12 => 
-  array (
-    'cat_id' => '40',
-    'cat_name' => '海信',
-    'measure_unit' => '',
-    'parent_id' => '43',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  13 => 
-  array (
-    'cat_id' => '49',
-    'cat_name' => 'LG',
-    'measure_unit' => '',
-    'parent_id' => '43',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  14 => 
-  array (
     'cat_id' => '38',
     'cat_name' => '华硕',
     'measure_unit' => '',
@@ -195,7 +130,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '8',
   ),
-  15 => 
+  10 => 
   array (
     'cat_id' => '32',
     'cat_name' => 'oppo',
@@ -208,7 +143,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '11',
   ),
-  16 => 
+  11 => 
   array (
     'cat_id' => '57',
     'cat_name' => '一加',
@@ -221,7 +156,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  17 => 
+  12 => 
   array (
     'cat_id' => '37',
     'cat_name' => '乐视',
@@ -234,7 +169,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '4',
   ),
-  18 => 
+  13 => 
   array (
     'cat_id' => '54',
     'cat_name' => '美图',
@@ -247,7 +182,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '2',
   ),
-  19 => 
+  14 => 
   array (
     'cat_id' => '44',
     'cat_name' => '诺基亚',
@@ -260,7 +195,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '8',
   ),
-  20 => 
+  15 => 
   array (
     'cat_id' => '50',
     'cat_name' => 'TCL',
@@ -273,7 +208,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  21 => 
+  16 => 
   array (
     'cat_id' => '34',
     'cat_name' => '小米',
@@ -286,7 +221,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '25',
   ),
-  22 => 
+  17 => 
   array (
     'cat_id' => '46',
     'cat_name' => '联想',
@@ -299,7 +234,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  23 => 
+  18 => 
   array (
     'cat_id' => '41',
     'cat_name' => '金立',
@@ -312,7 +247,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '16',
   ),
-  24 => 
+  19 => 
   array (
     'cat_id' => '31',
     'cat_name' => '三星',
@@ -325,7 +260,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '62',
   ),
-  25 => 
+  20 => 
   array (
     'cat_id' => '58',
     'cat_name' => '酷派',
@@ -338,7 +273,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '2',
   ),
-  26 => 
+  21 => 
   array (
     'cat_id' => '35',
     'cat_name' => '华为',
@@ -351,7 +286,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '74',
   ),
-  27 => 
+  22 => 
   array (
     'cat_id' => '55',
     'cat_name' => '锤子',
@@ -364,7 +299,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  28 => 
+  23 => 
   array (
     'cat_id' => '39',
     'cat_name' => '360奇酷',
@@ -377,7 +312,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '4',
   ),
-  29 => 
+  24 => 
   array (
     'cat_id' => '52',
     'cat_name' => '中兴',
@@ -390,7 +325,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  30 => 
+  25 => 
   array (
     'cat_id' => '30',
     'cat_name' => '苹果',
@@ -403,7 +338,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '16',
   ),
-  31 => 
+  26 => 
   array (
     'cat_id' => '47',
     'cat_name' => '天语',
@@ -416,7 +351,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  32 => 
+  27 => 
   array (
     'cat_id' => '45',
     'cat_name' => 'HTC',
@@ -429,7 +364,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  33 => 
+  28 => 
   array (
     'cat_id' => '33',
     'cat_name' => 'vivo',
@@ -442,33 +377,72 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '17',
   ),
+  29 => 
+  array (
+    'cat_id' => '36',
+    'cat_name' => '魅族',
+    'measure_unit' => '',
+    'parent_id' => '43',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '7',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '14',
+  ),
+  30 => 
+  array (
+    'cat_id' => '56',
+    'cat_name' => '微软',
+    'measure_unit' => '',
+    'parent_id' => '43',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  31 => 
+  array (
+    'cat_id' => '53',
+    'cat_name' => '语信',
+    'measure_unit' => '',
+    'parent_id' => '43',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  32 => 
+  array (
+    'cat_id' => '40',
+    'cat_name' => '海信',
+    'measure_unit' => '',
+    'parent_id' => '43',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  33 => 
+  array (
+    'cat_id' => '49',
+    'cat_name' => 'LG',
+    'measure_unit' => '',
+    'parent_id' => '43',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
   34 => 
-  array (
-    'cat_id' => '74',
-    'cat_name' => '华为',
-    'measure_unit' => '',
-    'parent_id' => '59',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  35 => 
-  array (
-    'cat_id' => '71',
-    'cat_name' => '三星',
-    'measure_unit' => '',
-    'parent_id' => '59',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  36 => 
   array (
     'cat_id' => '75',
     'cat_name' => '360',
@@ -481,7 +455,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  37 => 
+  35 => 
   array (
     'cat_id' => '72',
     'cat_name' => '其他',
@@ -494,7 +468,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  38 => 
+  36 => 
   array (
     'cat_id' => '73',
     'cat_name' => '苹果',
@@ -507,10 +481,36 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  39 => 
+  37 => 
   array (
     'cat_id' => '70',
     'cat_name' => '小天才',
+    'measure_unit' => '',
+    'parent_id' => '59',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  38 => 
+  array (
+    'cat_id' => '74',
+    'cat_name' => '华为',
+    'measure_unit' => '',
+    'parent_id' => '59',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  39 => 
+  array (
+    'cat_id' => '71',
+    'cat_name' => '三星',
     'measure_unit' => '',
     'parent_id' => '59',
     'is_show' => '1',
@@ -535,19 +535,6 @@ $data = array (
   ),
   41 => 
   array (
-    'cat_id' => '81',
-    'cat_name' => '闪迪',
-    'measure_unit' => '',
-    'parent_id' => '63',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  42 => 
-  array (
     'cat_id' => '82',
     'cat_name' => '金士顿',
     'measure_unit' => '',
@@ -559,7 +546,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  43 => 
+  42 => 
   array (
     'cat_id' => '83',
     'cat_name' => '东芝',
@@ -572,10 +559,23 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  44 => 
+  43 => 
   array (
     'cat_id' => '80',
     'cat_name' => '万能读卡',
+    'measure_unit' => '',
+    'parent_id' => '63',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  44 => 
+  array (
+    'cat_id' => '81',
+    'cat_name' => '闪迪',
     'measure_unit' => '',
     'parent_id' => '63',
     'is_show' => '1',
@@ -639,19 +639,6 @@ $data = array (
   ),
   49 => 
   array (
-    'cat_id' => '90',
-    'cat_name' => '苹果',
-    'measure_unit' => '',
-    'parent_id' => '65',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  50 => 
-  array (
     'cat_id' => '91',
     'cat_name' => '捷波朗',
     'measure_unit' => '',
@@ -663,7 +650,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  51 => 
+  50 => 
   array (
     'cat_id' => '88',
     'cat_name' => '小米',
@@ -676,10 +663,23 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  52 => 
+  51 => 
   array (
     'cat_id' => '89',
     'cat_name' => '其他',
+    'measure_unit' => '',
+    'parent_id' => '65',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  52 => 
+  array (
+    'cat_id' => '90',
+    'cat_name' => '苹果',
     'measure_unit' => '',
     'parent_id' => '65',
     'is_show' => '1',
@@ -730,6 +730,32 @@ $data = array (
   ),
   56 => 
   array (
+    'cat_id' => '85',
+    'cat_name' => '电视机顶盒',
+    'measure_unit' => '',
+    'parent_id' => '69',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  57 => 
+  array (
+    'cat_id' => '86',
+    'cat_name' => '电池',
+    'measure_unit' => '',
+    'parent_id' => '69',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  58 => 
+  array (
     'cat_id' => '87',
     'cat_name' => '保护膜',
     'measure_unit' => '',
@@ -741,7 +767,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  57 => 
+  59 => 
   array (
     'cat_id' => '68',
     'cat_name' => '车载配件',
@@ -754,36 +780,10 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  58 => 
+  60 => 
   array (
     'cat_id' => '84',
     'cat_name' => 'u盘',
-    'measure_unit' => '',
-    'parent_id' => '69',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  59 => 
-  array (
-    'cat_id' => '85',
-    'cat_name' => '电视机顶盒',
-    'measure_unit' => '',
-    'parent_id' => '69',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  60 => 
-  array (
-    'cat_id' => '86',
-    'cat_name' => '电池',
     'measure_unit' => '',
     'parent_id' => '69',
     'is_show' => '1',

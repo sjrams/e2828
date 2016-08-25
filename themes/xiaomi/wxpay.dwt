@@ -53,7 +53,6 @@
 }
 .content{ padding-top:50px; padding-bottom:;}
 </style>
-
 <section class="content">
 	<div id="viewport" class="viewport">
 		<div class="bee_order_sn">订单号：{$order.order_sn}</div>
@@ -61,13 +60,5 @@
 		<div class="pay_bottom">{$pay_online}</div>
 	</div>
 </section>
- 
-<form action="http://www.e2828.cn/wxzf/example/jsapi.php" method="post">
-	<div align="center">
-        <input type="text" name="order"  value="{$order.order_sn}" />
-		<input type="submit" name="Submit" value="提交" />
-	</div>
-	</form>
- 
 </body>
 </html>

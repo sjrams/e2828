@@ -1,4 +1,42 @@
 @charset "UTF-8";
+/*一级菜单的类*/
+.pp.c  .nav-category-children{
+			display: block;
+			}
+.pp .nav-category-children{
+			display: none;
+			position: absolute;
+			top: 201px;
+			left: 184px;
+			z-index: 12;
+			_zoom: 1;
+			width: 1127px;
+			border-right: 1px solid #dfdfdf;
+			background: #fff;
+			height: 420px;
+			}
+.pp .nav-category-children .children-list{
+			margin: 0;
+			padding: 0px 0;
+			list-style-type: none;
+			float: left;
+			width: 198px;
+			}
+.pp .nav-category-children .children-list span{
+			color:#808080;
+			font-size:1.3em;
+			}
+
+.children-list li a{
+			display: block;
+			padding: 10px 30px;
+			line-height: 50px;
+			}
+
+.children-list li a:hover{
+			background: #f3f3f3;
+			}
+/*一级菜单的类*/
 .main-content .mainsds .navleft{
 	float:left;
 }
@@ -9,26 +47,30 @@
 .main-content .mainsds .navleft{
 	width:152px;
 }
-.main-content .mainsds .navleft ul li{
+.main-content .mainsds .navleft .ul .li{
 	height:68px;
 	width:150px;
 	text-align:center;
 	line-height:68px;
 	border:solid 1px #ececec;
+	
 }
-.main-content .mainsds .navleft ul li a{
-	color:#808080;
+.main-content .mainsds .navleft .ul .li #a{
+    color:#808080;
 	font-size:1.3em;
 }
-.main-content .mainsds .navleft ul li a:hover{
-	color:#f18e1d;
+.main-content .mainsds .navleft .ul .li #a:hover{
+   color:#f18e1d;
+  
 }
 .main-content .mainsds .navleft .img43{
 	background:url(../images/标志/1.jpg) 25px no-repeat;
 	display:block;
+	
 }
 .main-content .mainsds .navleft .img43:hover{
 	background:url(../images/橙色/1-1.jpg) 25px no-repeat;
+	color:#f18e1d;
 }
 .main-content .mainsds .navleft .img60{
 	background:url(../images/标志/2.jpg) 25px no-repeat;
@@ -101,7 +143,7 @@
 }
 .main-content .mainsds .right .top .slideShow ul{
 	height:420px;
-	width: 5000px;
+	width: 50000px;
 	position: relative;  /*此处需注意relative : 对象不可层叠，但将依据left，right，top，bottom等属性在正常文档流中偏移位置，如果没有这个属性，图片将不可左右移动*/
 }
 .main-content .mainsds .right .top .slideShow ul li{
@@ -141,7 +183,7 @@
 	height:19px;
 	position:absolute;
 	bottom:5px;
-	width:104px;
+	width:500px;
 	left:46%;
 }
 .main-content .mainsds .right .top .showNav ul li{
@@ -184,6 +226,7 @@
 .main-content .mainsds .right .bottom .bottomlitte{
 	width:376px;
 	float:left;
+	height: 210px;
 }
 /*爆款推荐导航条*/
 .main-content .mainnr .bktj{

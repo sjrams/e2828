@@ -313,8 +313,8 @@
 }
 .home-hd-show .hd-show-item {
 	float:left;
-	width:362px;
-	height:173px;
+	width:330px;
+	height:183px;
 	border-right:1px solid #dfdfdf;
 	overflow:hidden;
 	_zoom:1
@@ -324,7 +324,7 @@
 	height:173px
 }
 .home-hd-show .hd-show-item-first {
-	width:363px
+	width:329px
 }
 .home-star-goods {
 	margin-top:10px;
@@ -387,12 +387,12 @@ float:left;
 	margin-bottom:15px
 }
 .home-new-goods .col-15 {
-	
+	height:929px;
 	overflow:hidden;
 	_zoom:1
 }
 .home-new-goods .col-5 {
-	
+	height:929px;
 	overflow:hidden;
 	_zoom:1;
 	background:#fafafa
@@ -412,8 +412,8 @@ float:left;
 	color:#f32f39
 }
 .home-new-goods .news-section {
-	
-	
+	padding:25px 30px;
+	border-top:1px solid #dfdfdf
 }
 .home-new-goods .news-section h3 {
 	margin:0 0 5px;
